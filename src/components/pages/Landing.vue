@@ -1,7 +1,7 @@
 <template>
     <div id="landing-page">
         <div id='menu-container'>
-            idk bro
+            <MenuButton />
         </div>
         
         <div id='title-container'>
@@ -16,6 +16,7 @@
 <script>
 import Title from "../Title.vue"
 import Subtitle from "../Subtitle.vue"
+import MenuButton from "../MenuButton.vue"
 
     export default {
         name: 'Landing',
@@ -23,6 +24,7 @@ import Subtitle from "../Subtitle.vue"
         components: {
             Title,
             Subtitle,
+            MenuButton,
         },
         
         props: {
@@ -47,6 +49,10 @@ import Subtitle from "../Subtitle.vue"
 
 #menu-container {
     height: 35%;
+    display: flex;
+    justify-content: left;
+    margin: 50px 0px 0px 50px;
+
 }
 
 #title-container {
