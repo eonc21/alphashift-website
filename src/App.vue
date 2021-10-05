@@ -1,26 +1,81 @@
 <template>
-  <img alt="Vue logo" src="./assets/logo.png">
-  <HelloWorld msg="Welcome to Your Vue.js App"/>
+
+  <div class="page">
+    <div class="view-container">
+      <Landing />
+    </div>
+
+    <div class="view-container">
+      <WhoAreWe />
+    </div>
+
+    <div class="view-container">
+
+    </div>
+
+    <div class="view-container">
+
+    </div>
+
+  </div>
+  <h1>HELLO FROM VUEJS.</h1>
 </template>
 
 <script>
-import HelloWorld from './components/HelloWorld.vue'
-
+import Landing from "./components/pages/Landing.vue"
+import WhoAreWe from "./components/pages/WhoAreWe.vue"
 export default {
   name: 'App',
   components: {
-    HelloWorld
+    Landing,
+    WhoAreWe, 
+
   }
 }
 </script>
 
 <style>
+
+body {
+  padding: 0;
+  margin: 0;
+  border: 0;
+  max-width: 100%;
+  display: flex;
+}
+
+body::-webkit-scrollbar {
+  width: 13px;    
+}
+body::-webkit-scrollbar-track {
+  background: #242424;      
+}
+body::-webkit-scrollbar-thumb {
+  background-color: #8c2121f1;   
+  border-radius: 20px;       
+  border: 1px solid #242424;
+}
+
 #app {
   font-family: Avenir, Helvetica, Arial, sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
   text-align: center;
   color: #2c3e50;
-  margin-top: 60px;
+  padding: 0;
+  margin: 0;
+  border: 0;
+
+}
+
+.page {
+  width: 100%;
+  height: fit-content;
+ 
+}
+
+.view-container {
+  height: 100vh;
+  width: 100vw;
+  max-width: 100%;
+  
 }
 </style>
