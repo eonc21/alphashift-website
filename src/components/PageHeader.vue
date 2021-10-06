@@ -1,0 +1,35 @@
+<template>
+    <div id='header'>
+        <text>{{ text }}</text>
+        
+    </div>
+</template>
+
+<script>
+    export default {
+        name: "PageHeader",
+
+        props: {
+            text: String,
+            styling: String,
+        }
+        
+    }
+</script>
+
+<style scoped>
+@import url('https://fonts.googleapis.com/css2?family=Oswald:wght@200;300;400&display=swap');
+
+#header {
+    width:fit-content;
+    height: fit-content;
+    padding: 25px 55px 25px 55px;
+    font-size: 3.5rem;
+    letter-spacing: 2px;
+    font-weight: 200;
+    color: rgba(255, 255, 255, 0.85);
+    font-family: 'Oswald', sans-serif;
+    border: rgba(255, 255, 255, 0.85) solid 1px;
+}
+
+</style>

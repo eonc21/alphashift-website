@@ -9,7 +9,7 @@
 
         name: 'MenuButton',
 
-        component: {
+        components: {
 
         },
 

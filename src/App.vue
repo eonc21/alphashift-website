@@ -36,12 +36,13 @@ export default {
 
 <style>
 
+
 body {
   padding: 0;
   margin: 0;
   border: 0;
-  max-width: 100%;
-  display: flex;
+  overflow-x: auto;
+  /* display: flex; */
 }
 
 body::-webkit-scrollbar {
@@ -57,18 +58,15 @@ body::-webkit-scrollbar-thumb {
 }
 
 #app {
-  font-family: Avenir, Helvetica, Arial, sans-serif;
   text-align: center;
-  color: #2c3e50;
-  padding: 0;
-  margin: 0;
-  border: 0;
 
 }
 
 .page {
   width: 100%;
   height: fit-content;
+  scroll-behavior: smooth;
+
  
 }
 
@@ -76,6 +74,5 @@ body::-webkit-scrollbar-thumb {
   height: 100vh;
   width: 100vw;
   max-width: 100%;
-  
 }
 </style>
