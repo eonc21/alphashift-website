@@ -10,8 +10,11 @@
   "dependencies": {
     "core-js": "^3.6.5",
     "vue": "^3.0.0",
+    "vue-carousel": "^0.18.0",
     "vue-typed-js": "^0.1.2",
-    "vue-typer": "^1.2.0"
+    "vue-typer": "^1.2.0",
+    "vue3-carousel": "^0.1.27",
+    "vueperslides": "^3.3.2"
   },
   "devDependencies": {
     "@vue/cli-plugin-babel": "~4.5.0",

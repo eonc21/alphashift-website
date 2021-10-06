@@ -22,9 +22,13 @@
 </template>
 
 <script>
+// import Vue from 'vue';
+// import VueCarousel from 'vue-carousel';
 import Landing from "./components/pages/Landing.vue"
 import WhoAreWe from "./components/pages/WhoAreWe.vue"
 import WhatWeDo from "./components/pages/WhatWeDo.vue"
+
+// Vue.use(VueCarousel);
 
 export default {
   name: 'App',
