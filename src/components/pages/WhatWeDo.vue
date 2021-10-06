@@ -2,7 +2,7 @@
     <div id="what-are-we-page">
         <div class="half-page red">
             <div id="image-container">
-                <img src="../../assets/whatwedo.jpg" />
+                <img src="../../assets/whatwedo.png" />
             </div>
             
         </div>
@@ -14,7 +14,7 @@
                         <vueper-slide v-for="(slide, i) in slides" 
                             :content="slide.content" 
                             :key="i"
-                            :style="`display: flex; color: rgba(255, 255, 255, 0.82); font-size: 1.55vw; height: fit-conntent;`"/>
+                            :style="`display: flex; color: rgba(255, 255, 255, 0.82); font-size: 1.45vw; height: fit-conntent;`"/>
                     </VueperSlides>
                 </div>
 
@@ -22,7 +22,9 @@
                 
             </div>
             <div id="button-container">
-                    hello
+                Work with us ⮞
+
+                    
                 </div>
 
             
@@ -103,7 +105,7 @@ import 'vueperslides/dist/vueperslides.css'
 
 .half-page {
     width: 50%;
-    color: rgba(255, 255, 255, 0.85);
+    color: rgba(255, 255, 255, 0.80);
     display: flex;
     justify-content: right;
 
@@ -159,19 +161,30 @@ img {
 }
 
 #button-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
     background: black;
     height: 12%;
-    width: 40%;
+    width: 30%;
+    text-align: center;
     /* border: 1px pink solid; */
     margin-top: auto;
-  
-    
+    font-family: 'Poppins', sans-serif;
+    font-size: 1.2rem;
+    border-radius: 0 20px 0 0px;
+}
+
+span {
+    font-size: 1.9rem;
 }
 
 
 
+
+
 .red {
-    background: #741414;
+    background: #661111;
 }
 
 </style>
