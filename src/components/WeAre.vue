@@ -29,13 +29,12 @@ in order to make better decisions.
     width: 80%;
     font-family: 'Poppins', sans-serif;
     color: rgba(255, 255, 255, 0.80);
-    font-size: 2.1rem;
-    
-
 }
 
 p {
     width: 90%;
+    font-size: 1.7vw;
+    
     align-self: center;
 }
 
