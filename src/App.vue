@@ -10,7 +10,7 @@
     </div>
 
     <div class="view-container">
-
+      <WhatWeDo />
     </div>
 
     <div class="view-container">
@@ -24,11 +24,14 @@
 <script>
 import Landing from "./components/pages/Landing.vue"
 import WhoAreWe from "./components/pages/WhoAreWe.vue"
+import WhatWeDo from "./components/pages/WhatWeDo.vue"
+
 export default {
   name: 'App',
   components: {
     Landing,
     WhoAreWe, 
+    WhatWeDo,
 
   }
 }

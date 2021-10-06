@@ -44,7 +44,7 @@ import MenuButton from "../MenuButton.vue"
     flex-direction: column;
     height: 100%;
     background-color: #171717;
-    color: rgba(255, 255, 255, 0.856);
+    color: rgba(255, 255, 255, 0.85);
 }
 
 #menu-container {
