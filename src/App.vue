@@ -14,11 +14,11 @@
     </div>
 
     <div class="view-container">
-
+      <OurServices />
     </div>
 
   </div>
-  <h1>HELLO FROM VUEJS.</h1>
+  <!-- <h1>HELLO FROM VUEJS.</h1> -->
 </template>
 
 <script>
@@ -27,6 +27,7 @@
 import Landing from "./components/pages/Landing.vue"
 import WhoAreWe from "./components/pages/WhoAreWe.vue"
 import WhatWeDo from "./components/pages/WhatWeDo.vue"
+import OurServices from "./components/pages/OurServices.vue"
 
 // Vue.use(VueCarousel);
 
@@ -36,6 +37,7 @@ export default {
     Landing,
     WhoAreWe, 
     WhatWeDo,
+    OurServices,
 
   }
 }
