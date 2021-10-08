@@ -13,8 +13,7 @@ import ProcessBox from '../components/ProcessBox.vue'
     export default {
         name: 'ProcessContainer',
         props: {
-            // text: String,
-            // content: String,
+            
         },
 
         components: {

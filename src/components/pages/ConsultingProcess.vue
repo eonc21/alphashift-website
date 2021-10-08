@@ -11,6 +11,7 @@
 
 <script>
 import ProcessContainer from '../ProcessContainer.vue'
+import LineContainer from '../LineContainer.vue'
     export default {
         name: 'ConsultingProcess',
 
@@ -20,6 +21,7 @@ import ProcessContainer from '../ProcessContainer.vue'
 
         components: {
             ProcessContainer,
+            LineContainer,
 
         },
 
