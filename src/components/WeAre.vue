@@ -29,6 +29,7 @@ in order to make better decisions.
     width: 80%;
     font-family: 'Poppins', sans-serif;
     color: rgba(255, 255, 255, 0.80);
+    margin:auto;
 }
 
 p {

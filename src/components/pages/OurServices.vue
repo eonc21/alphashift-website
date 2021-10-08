@@ -1,8 +1,11 @@
 <template>
     <div class="container">
         <div id='text-container'>
-            <PageHeader text="OUR SERVICES" />
-            <ServiceList :services="services" />
+            <animated-component>
+                <PageHeader text="OUR SERVICES" />
+                <ServiceList :services="services" />
+            </animated-component>
+
         </div>
         <div class='btn'>
             <Button />
@@ -18,7 +21,9 @@
 import ServiceList from '../ServiceList.vue'
 import PageHeader from '../PageHeader.vue'
 import Button from '../Button.vue'
-    export default {
+import AnimatedComponent from '../AnimatedComponent.vue'
+
+export default {
 
         name: 'OurServices',
 
@@ -26,6 +31,7 @@ import Button from '../Button.vue'
             ServiceList,
             PageHeader,
             Button,
+            AnimatedComponent,
         },
 
         data() {

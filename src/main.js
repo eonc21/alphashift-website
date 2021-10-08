@@ -1,4 +1,29 @@
-import { createApp } from 'vue'
-import App from './App.vue'
-
-createApp(App).mount('#app')
+import { createApp } from 'vue';
+import App from './App.vue';
+// import router from './router';
+export const appear = {
+  beforeMount(element) {
+    element.style.visibility = 'hidden';
+  },
+  updated(element, 
+          binding, 
+          node) {
+    if (!binding.value === !binding.oldValue 
+        || null === node.transition) {
+      return;
+    }
+    if (!binding.value) {
+      node.transition.leave(element, () => {
+        element.style.visibility = 'hidden';
+      });
+      return;
+    }
+    node.transition.beforeEnter(element);
+    element.style.visibility = '';
+    node.transition.enter(element);
+  }
+};
+createApp(App)
+// .use(router)
+.directive('appear', appear)
+.mount('#app');

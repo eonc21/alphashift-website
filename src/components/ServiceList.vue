@@ -29,8 +29,11 @@ import Service from '../components/Service.vue'
 #service-list {
     width: 90%;
     display: flex;
+    align-items: center;
+    align-content: center;
     align-self: center;
-    justify-content: space-between;
+    justify-content:center;
+    margin:auto;
     margin-top: 35px;
 }
 
