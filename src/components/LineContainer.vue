@@ -1,12 +1,14 @@
 <template>
     <div id='middle-container'>
-        <div class='horizontal'>
-
+        <div class='half'>
+            <div class='horizontal'></div>
+             <div class="point"></div>
         </div>
 
-         <div class='horizontal bottom'>
+        <div class='half'>
+             <div class="point left"></div>
+            <div class='horizontal'></div>
 
-        
         </div>
     </div>
 </template>
@@ -36,13 +38,26 @@
     border-bottom: 1px solid rgb(255, 255, 255);
 }
 
-.bottom {
-    border-bottom: 0;
+.point {
+width: 0;
+  height: 0;
+  border-top: 8px solid transparent;
+  border-bottom: 8px solid transparent;
+  border-left: 8px solid rgba(255, 255, 255, 0.87);
+  align-self: center;
+}
 
-    border-top: 1px solid rgb(255, 255, 255);
-    
-    
+.left {
+  border-right: 8px solid rgba(255, 255, 255, 0.87);
+  border-left: 0;
+}
 
+
+
+.half {
+    display: flex;
+    justify-content: center;
+    height: 200px;
 }
 
 </style>
