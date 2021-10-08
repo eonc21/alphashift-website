@@ -10,10 +10,11 @@
                 <ServiceList :services="services" />
             </animated-component>
 
+            <div class='btn'>
+                <Button @click="buttonClick" text="LEARN MORE"/>
+            </div>
         </div>
-        <div class='btn'>
-            <Button @click="buttonClick" text="LEARN MORE"/>
-        </div>
+        
         
 
         
@@ -100,16 +101,23 @@ export default {
     display: flex;
     justify-content: center;
     align-self: center;
-    width:20%;
+    height: 1vh;
+    width:20vw;
 }
 
 #text-container {
-    width: 85%;
-    height: 70%;
+    width: 90%;
+    height: 100%;
     display: flex;
     align-self: center;
-    justify-content:flex-start;
+    justify-content:space-evenly;
     flex-direction: column;
 }
 
+@media (max-width: 1000px){
+    .container {
+        height: fit-content;
+        max-width: 100vw;
+    }
+}
 </style>

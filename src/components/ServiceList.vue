@@ -34,12 +34,22 @@ import Service from '../components/Service.vue'
     align-self: center;
     justify-content:center;
     margin:auto;
-    margin-top: 50px;
+    margin-top: 0px;
 }
+
 
 #service {
     display: flex;
     justify-content: center;
+}
+
+@media (max-width: 1000px){
+    #service-list {
+        flex-direction: column;
+        width: 100%
+    
+    }
+    
 }
 
 </style>

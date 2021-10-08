@@ -1,11 +1,15 @@
 <template>
-    <div class='process-page'>
+    <div class='process-page' id="page">
+        <!-- <div class="title">
+            <p>OUR CONSULTING PROCESS</p>
+        </div> -->
         <div class ='process-page smaller'>
-        <ProcessContainer />
-        <LineContainer />
-        <ProcessContainer />
-            
+            <ProcessContainer :titles="titles.titlesbox1" :isLeft="true"/>
+            <LineContainer />
+            <ProcessContainer :titles="titles.titlesbox2"
+                :content="content.contentsbox2"/>
         </div>
+        
     </div>
 </template>
 
@@ -25,25 +29,75 @@ import LineContainer from '../LineContainer.vue'
 
         },
 
+        data() {
+            return {
+                titles: {
+                    titlesbox1: ["UNDERSTANDING THE PROBLEM", "STRATEGY CONSULTING & DELIVERABLES"],
+                    titlesbox2: ["DATA MODELLING & ENGINEERING", "AI/ML MODELLING AND DATA ANALYTICS"]
+                },
+                content: {
+                    contentsbox1: ["DATA MODELLING & ENGINEERING", "AI/ML MODELLING AND DATA ANALYTICS"],
+                    contentsbox2: ["EEEH", "IDK BRO"],
+                }
+            }
+        }
+
     }
 </script>
 
 <style scoped>
+@import url('https://fonts.googleapis.com/css2?family=Oswald:wght@200;300;400&display=swap');
 
 .process-page {
+    font-family: "Oswald", sans-serif;
+
     display: flex;
-    justify-content: center;
+    /* justify-content: center; */
     /* border: 1px solid slateblue; */
     width: 100%;
     height: 100%;
-    background: #171717;
+    
+/* background-size: 100%; */
+    /* background-image; */
+    
+}
+
+#page {
+    flex-direction: column;
+    background-image: linear-gradient(0deg, rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.75)),
+     url('https://res.cloudinary.com/gromceri-test/image/upload/v1633734401/AlphaShift/samson-ZGjbiukp_-A-unsplash_ezrblm.jpg');
+     /* mix-blend-mode: normal; */
+    background-size: cover;
+        /* filter: grayscale(70%); Current draft standard */
+
+    background-repeat: no-repeat;
+
 }
 
 .smaller {
-    width: 70%;
+    width: 60%;
     height: 70%;
     justify-content: space-between;
     align-self: center;
+    letter-spacing: 2px;
+    margin:auto;
+}
+
+.title {
+    display: flex;
+    width: 100%;
+    height: 7.5%;
+    align-self: flex-start;
+    /* border: 1px yellow solid; */
+    background: #661111;
+    color: rgba(255, 255, 255, 0.85);
+    justify-content: center;
+    text-align: center;
+}
+
+p {
+    font-size: 1.5rem;
+    margin:auto;
 }
 
 </style>

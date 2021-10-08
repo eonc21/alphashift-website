@@ -90,4 +90,13 @@ body::-webkit-scrollbar-thumb {
   width: 100vw;
   max-width: 100%;
 }
+
+@media (max-width: 1000px){
+
+  .view-container {
+    height: fit-content;
+    /* width: 100vw; */
+    /* max-width: 100%; */
+}
+}
 </style>

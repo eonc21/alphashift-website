@@ -24,7 +24,7 @@
     width:fit-content;
     height: fit-content;
     padding: 25px 55px 25px 55px;
-    font-size: 3.5rem;
+    font-size: 2.75vw;
     letter-spacing: 2px;
     font-weight: 200;
     color: rgba(255, 255, 255, 0.85);

@@ -1,6 +1,7 @@
 <template>
     <div id='middle-container'>
         <div class='half'>
+            <div class='word'>YES.</div>
             <div class='horizontal'></div>
              <div class="point"></div>
         </div>
@@ -28,6 +29,7 @@
     height: 100%;
     flex-direction: column;
     justify-content: space-between;
+    color: white;
     /* border: 1px solid blue; */
 }
 
@@ -58,6 +60,12 @@ width: 0;
     display: flex;
     justify-content: center;
     height: 200px;
+}
+
+.word {
+    align-self: center;
+    margin-right: 25px;
+    font-size: 1.75rem;
 }
 
 </style>

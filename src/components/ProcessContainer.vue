@@ -1,15 +1,16 @@
 <template>
     <div id='main-container'>
-        <ProcessBox title="UNDERSTANDING THE PROBLEM" 
-        content="Is a data solution suitable?"/>
+        <ProcessBox :title="titles[0]"
+        />
         <div id=line-container>
+            <div v-if="isLeft" id='word'>NO.</div>
             <div id='line'>
             </div>
              <div class="point"></div>
         </div>
         
-        <ProcessBox title="UNDERSTANDING THE PROBLEM" 
-        content="Is a data solution suitable?"/>
+        <ProcessBox :title="titles[1]"
+       />
 
 
     </div>
@@ -22,6 +23,7 @@ import ProcessBox from '../components/ProcessBox.vue'
         props: {
             titles: Array,
             contents: Array,
+            isLeft: Boolean,
         },
 
         components: {
@@ -41,7 +43,7 @@ import ProcessBox from '../components/ProcessBox.vue'
     align-self: center;
     width: 25%;
     height: 100%;
-    color: white;
+    color: rgba(255, 255, 255, 0.835);
 }
 .point {
     width: 0;
@@ -71,6 +73,10 @@ import ProcessBox from '../components/ProcessBox.vue'
 
 }
 
+#word {
+    font-size: 1.75rem;
+    margin-bottom: 20px;
+}
 
 .point {
     
