@@ -17,6 +17,10 @@
       <OurServices />
     </div>
 
+    <div class="view-container">
+      <ConsultingProcess />
+    </div>
+
   </div>
   <!-- <h1>HELLO FROM VUEJS.</h1> -->
 </template>
@@ -28,6 +32,7 @@ import Landing from "./components/pages/Landing.vue"
 import WhoAreWe from "./components/pages/WhoAreWe.vue"
 import WhatWeDo from "./components/pages/WhatWeDo.vue"
 import OurServices from "./components/pages/OurServices.vue"
+import ConsultingProcess from "./components/pages/ConsultingProcess.vue"
 
 // Vue.use(VueCarousel);
 
@@ -38,6 +43,7 @@ export default {
     WhoAreWe, 
     WhatWeDo,
     OurServices,
+    ConsultingProcess,
 
   }
 }

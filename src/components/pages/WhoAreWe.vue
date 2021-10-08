@@ -3,10 +3,12 @@
             
 
         <div id="text-container">
-            <animated-component>
-                <PageHeader text="WHO ARE WE?" />
-                <WeAre />
-            </animated-component>
+                <animated-component>
+                    <PageHeader text="WHO ARE WE?" />
+                </animated-component>
+                <animated-component>
+                    <WeAre />
+                </animated-component>
 
         </div>
 
@@ -54,7 +56,7 @@ import AnimatedComponent from '../AnimatedComponent.vue'
     height: 85%;
     display: flex;
     align-self: center;
-    justify-content: center;
+    /* justify-content: ; */
     flex-direction: column;
 }
 

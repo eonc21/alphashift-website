@@ -25,7 +25,8 @@ in order to make better decisions.
 
 
 #text-container {
-    display: inline-block;
+    display: flex;
+    align-self: center;
     width: 80%;
     font-family: 'Poppins', sans-serif;
     color: rgba(255, 255, 255, 0.80);
@@ -34,8 +35,10 @@ in order to make better decisions.
 
 p {
     width: 90%;
-    font-size: 1.7vw;
-    
+    font-size: 1.75vw;
+    margin-top: 125px;
+
+    text-align: center;
     align-self: center;
 }
 

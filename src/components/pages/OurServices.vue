@@ -2,13 +2,17 @@
     <div class="container">
         <div id='text-container'>
             <animated-component>
-                <PageHeader text="OUR SERVICES" />
+
+            <PageHeader text="OUR SERVICES" />
+            </animated-component>
+
+            <animated-component>
                 <ServiceList :services="services" />
             </animated-component>
 
         </div>
         <div class='btn'>
-            <Button />
+            <Button @click="buttonClick" text="LEARN MORE"/>
         </div>
         
 
@@ -32,6 +36,12 @@ export default {
             PageHeader,
             Button,
             AnimatedComponent,
+        },
+
+        methods: {
+            buttonClick() {
+                alert('Learn more')
+            }
         },
 
         data() {
@@ -98,7 +108,7 @@ export default {
     height: 70%;
     display: flex;
     align-self: center;
-    justify-content:start;
+    justify-content:flex-start;
     flex-direction: column;
 }
 

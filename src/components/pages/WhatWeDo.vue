@@ -8,14 +8,21 @@
         </div>
         <div class="half-page black">
             <div id="text-container">
-                <PageHeader text="WHAT WE DO" />
+                <animated-component>
+                    <PageHeader text="WHAT WE DO" />
+                </animated-component>
+
                 <div id="slides-container">
-                    <VueperSlides  class="no-shadow" :bullets="false" fixed-height="100%">
+                        <VueperSlides  class="no-shadow" :bullets="false" fixed-height="100%">
                         <vueper-slide v-for="(slide, i) in slides" 
                             :content="slide.content" 
                             :key="i"
-                            :style="`display: flex; color: rgba(255, 255, 255, 0.82); font-size: 1.45vw; height: fit-conntent;`"/>
+                            :style="`display: flex; 
+                            color: rgba(255, 255, 255, 0.82); 
+                            font-size: 1.45vw;
+                             height: fit-conntent;`"/>
                     </VueperSlides>
+                    
                 </div>
 
                 
@@ -23,9 +30,7 @@
             </div>
             <div id="button-container">
                 Work with us ⮞
-
-                    
-                </div>
+            </div>
 
             
 
@@ -38,6 +43,7 @@
 
 <script>
 import PageHeader from '../PageHeader.vue'
+import AnimatedComponent from '../AnimatedComponent.vue'
 import { VueperSlides, VueperSlide } from 'vueperslides'
 import 'vueperslides/dist/vueperslides.css'
 
@@ -48,7 +54,8 @@ import 'vueperslides/dist/vueperslides.css'
         components: {
             PageHeader,
             VueperSlides, 
-            VueperSlide
+            VueperSlide,
+            AnimatedComponent
 
         },
         data: () => ({

@@ -34,7 +34,7 @@ import Service from '../components/Service.vue'
     align-self: center;
     justify-content:center;
     margin:auto;
-    margin-top: 35px;
+    margin-top: 50px;
 }
 
 #service {
