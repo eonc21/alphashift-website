@@ -4,10 +4,13 @@
             <p>OUR CONSULTING PROCESS</p>
         </div> -->
         <div class ='process-page smaller'>
+            <!-- <animated-component> -->
             <ProcessContainer :titles="titles.titlesbox1" :isLeft="true"/>
             <LineContainer />
             <ProcessContainer :titles="titles.titlesbox2"
                 :content="content.contentsbox2"/>
+            <!-- </animated-component> -->
+
         </div>
         
     </div>
@@ -64,19 +67,19 @@ import LineContainer from '../LineContainer.vue'
 
 #page {
     flex-direction: column;
-    background-image: linear-gradient(0deg, rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.75)),
+    background-image: linear-gradient(0deg, rgba(0, 0, 0, 0.8), rgba(0, 0, 0, 0.8)),
      url('https://res.cloudinary.com/gromceri-test/image/upload/v1633734401/AlphaShift/samson-ZGjbiukp_-A-unsplash_ezrblm.jpg');
      /* mix-blend-mode: normal; */
     background-size: cover;
-        /* filter: grayscale(70%); Current draft standard */
+        filter: grayscale(50%);
 
     background-repeat: no-repeat;
 
 }
 
 .smaller {
-    width: 60%;
-    height: 70%;
+    width: 65%;
+    height: 75%;
     justify-content: space-between;
     align-self: center;
     letter-spacing: 2px;

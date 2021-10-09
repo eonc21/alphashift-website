@@ -6,6 +6,12 @@
              <div class="point"></div>
         </div>
 
+        <div id='text'>
+           <p>
+               OUR PROCESS.
+           </p>
+        </div>
+
         <div class='half'>
              <div class="point left"></div>
             <div class='horizontal'></div>
@@ -66,6 +72,14 @@ width: 0;
     align-self: center;
     margin-right: 25px;
     font-size: 1.75rem;
+}
+
+#text {
+    font-size: 2.5vw;
+    width: 80%;
+    align-self: center;
+    font-weight: 300;
+    color: rgba(255, 255, 255, 0.8);
 }
 
 </style>
