@@ -2,7 +2,7 @@
   <div id='conclusion-page'>
       <PageHeader text="INTERESTED? CONTACT US." />
       <div id='form-container'>
-          FORM HERE
+          <Contact />
       </div>
       
   </div>
@@ -12,6 +12,7 @@
 </template>
 
 <script>
+import Contact from '../Contact.vue'
 import PageHeader from '../PageHeader.vue'
 
 export default {
@@ -20,6 +21,7 @@ export default {
 
     components: {
         PageHeader,
+        Contact,
 
     },
 
