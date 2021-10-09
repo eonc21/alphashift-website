@@ -21,6 +21,10 @@
       <ConsultingProcess />
     </div>
 
+    <div class="view-container">
+      <Conclusion />
+    </div>
+
   </div>
   <!-- <h1>HELLO FROM VUEJS.</h1> -->
 </template>
@@ -33,6 +37,7 @@ import WhoAreWe from "./components/pages/WhoAreWe.vue"
 import WhatWeDo from "./components/pages/WhatWeDo.vue"
 import OurServices from "./components/pages/OurServices.vue"
 import ConsultingProcess from "./components/pages/ConsultingProcess.vue"
+import Conclusion from "./components/pages/Conclusion.vue"
 
 // Vue.use(VueCarousel);
 
@@ -44,6 +49,7 @@ export default {
     WhatWeDo,
     OurServices,
     ConsultingProcess,
+    Conclusion,
 
   }
 }
@@ -96,7 +102,7 @@ body::-webkit-scrollbar-thumb {
   .view-container {
     height: fit-content;
     /* width: 100vw; */
-    /* max-width: 100%; */
+    max-width: 100vw;
 }
 }
 </style>
