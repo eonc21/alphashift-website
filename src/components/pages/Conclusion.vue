@@ -198,4 +198,13 @@ p {
 
 }
 
+@media (max-width: 1000px){
+
+  #conclusion-page {
+    height: fit-content;
+    /* width: 100vw; */
+    max-width: 100vw;
+}
+}
+
 </style>

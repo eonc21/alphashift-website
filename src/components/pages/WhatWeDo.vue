@@ -186,12 +186,23 @@ span {
     font-size: 1.9rem;
 }
 
-
-
-
-
 .red {
     background: #661111;
+}
+
+@media (max-width: 1000px){
+
+  #what-are-we-page {
+      flex-direction: column;
+    height: fit-content;
+    /* width: 100vw; */
+    max-width: 100vw;
+}
+
+.half-page {
+    width:100%;
+    height: 500px;
+}
 }
 
 </style>

@@ -7,8 +7,7 @@
             <!-- <animated-component> -->
             <ProcessContainer :titles="titles.titlesbox1" :isLeft="true"/>
             <LineContainer />
-            <ProcessContainer :titles="titles.titlesbox2"
-                :content="content.contentsbox2"/>
+            <ProcessContainer :titles="titles.titlesbox2"/>
             <!-- </animated-component> -->
 
         </div>
@@ -38,10 +37,7 @@ import LineContainer from '../LineContainer.vue'
                     titlesbox1: ["UNDERSTANDING THE PROBLEM", "STRATEGY CONSULTING & DELIVERABLES"],
                     titlesbox2: ["DATA MODELLING & ENGINEERING", "AI/ML MODELLING AND DATA ANALYTICS"]
                 },
-                content: {
-                    contentsbox1: ["DATA MODELLING & ENGINEERING", "AI/ML MODELLING AND DATA ANALYTICS"],
-                    contentsbox2: ["EEEH", "IDK BRO"],
-                }
+            
             }
         }
 
@@ -84,6 +80,8 @@ import LineContainer from '../LineContainer.vue'
     align-self: center;
     letter-spacing: 2px;
     margin:auto;
+    min-width: 900px;
+    min-height: 550px;
 }
 
 .title {
@@ -101,6 +99,14 @@ import LineContainer from '../LineContainer.vue'
 p {
     font-size: 1.5rem;
     margin:auto;
+}
+
+@media (max-width: 1000px){
+
+  .smaller {
+    flex-direction: column;
+    /* width: 100vw; */
+}
 }
 
 </style>

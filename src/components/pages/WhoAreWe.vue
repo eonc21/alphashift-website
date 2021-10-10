@@ -60,4 +60,13 @@ import AnimatedComponent from '../AnimatedComponent.vue'
     flex-direction: column;
 }
 
+@media (max-width: 1000px){
+
+  #who-we-are-page{
+    height: fit-content;
+    /* width: 100vw; */
+    /* max-width: 100vw; */
+}
+}
+
 </style>

@@ -1,6 +1,6 @@
 <template>
     <div id='main-container'>
-        <ProcessBox :title="titles[0]"
+        <ProcessBox :title="titles[0]" :hasContent="isLeft"
         />
         <div id=line-container>
             <div v-if="isLeft" id='word'>NO.</div>
@@ -84,4 +84,6 @@ import ProcessBox from '../components/ProcessBox.vue'
     align-self: center;
     
 }
+
+
 </style>

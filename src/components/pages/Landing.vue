@@ -67,6 +67,15 @@ import MenuButton from "../MenuButton.vue"
 
 }
 
+@media (max-width: 1000px){
+
+  #landing-page {
+    height: fit-content;
+    /* width: 100vw; */
+    max-width: 100vw;
+}
+}
+
 
 
 </style>
