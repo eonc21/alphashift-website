@@ -1,28 +1,57 @@
 <template>
-  <Form @submit="onSubmit">
-      <Field name="email" type="email" :rules="validateEmail"/>
-            <ErrorMessage name="email" />
+  <div class="form">
+    <Form  @submit="onSubmit">
+      <TextInput
+        name="email"
+        type="email"
+        label="Email:"
+        placeholder="Your email"
+        success-message="Nice to meet you!"
+      />
+      
 
-      <button>Sign up for newsletter</button>
-    <!-- <div class="field">
-        <label class="label">Inquiry Type</label>
-        <div class="control">
-            <div class="select">
-            <select v-model="form.inquiry_type">
-                <option disabled value="">Nothing selected</option>
-                <option :key="option.value" v-for="option in options.inquiry" v-bind:value="option.value">
-                {{ option.text }}
-                </option>
-            </select>
-            </div>
-        </div>
-    </div> -->
+      <TextInput
+        name="name"
+        type="text"
+        label="Name:"
+        placeholder="Your name"
+        success-message="Nice to meet you!"
+      />
+      <div class='checkboxes'>
+        <Field v-slot="{ field }" name="apply" type="checkbox" :value="false">
+          <label>
+            <input type="checkbox" name="apply" v-bind="field" :value="false" />
+             I want to work at AlphaShift.
+          </label>
+        </Field>
+        <Field v-slot="{ field }" name="customer" type="checkbox" :value="false">
+          <label>
+            <input type="checkbox" name="customer" v-bind="field" :value="false" />
+               I want to be a customer.
+          </label>
+        </Field>
+      </div>     
+
+      <TextInput
+        name="message"
+        type="text"
+        label="Message:"
+        placeholder="Your thoughts"
+        success-message="Nice to meet you!"
+      />
+
+      <Button text="SUBMIT"/>
+
 
     </Form>
+  </div>
+  
 </template>
 
 <script>
-import { Field, Form, ErrorMessage } from 'vee-validate';
+import { Form, Field } from 'vee-validate';
+import TextInput from './TextInput.vue'
+import Button from './Button.vue'
 
 
 export default {
@@ -31,7 +60,8 @@ export default {
   components: {
     Form,
     Field,
-    ErrorMessage,
+    Button,
+    TextInput,
   },
 
   methods: {
@@ -69,18 +99,49 @@ export default {
 </script>
 
 <style>
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,200;0,300;0,400;1,200;1,300&display=swap');
 
 form {
     display: flex;
     flex-direction: column;
+    justify-content: flex-start;
     width: 100%;
-    height: 100%;
-    border: 1px solid red;
+    height:550px;
+    margin:auto;
+    font-family: "Poppins", sans-serif;
+    /* color: rgba(255, 255, 255, 0.856); */
+    /* border: 1px solid red; */
+}
+label {
+  display: flex;
+  /* width: 35%; */
 }
 
-.field {
-    display: flex;
-    font-size: 2rem;
+.checkboxes {
+  display: flex;
+  justify-content: space-between;
+  /* margin-bottom: 40px; */
+  height: 75px;
+  text-align: center;
+  align-items: center;
+  width: 75%;
+  align-self: center;
+  font-size: 1.5vw;
+}
+
+input {
+  display: flex;
+  /* width: 100%; */
+  align-self: center;
+  text-align: center;
+  margin-right: 10px;
+
+}
+
+button {
+  width: 20%;
+  margin: auto;
+  align-self: center;
 }
 
 </style>

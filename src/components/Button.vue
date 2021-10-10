@@ -34,7 +34,8 @@
     font-family: "Oswald", sans-serif;
     align-items: center;
     align-self: center;
-    width: 70%;
+    padding: 0 30px;
+    width: auto;
     transition: all 0.4s;
     height: 9vh;
     /* padding-top: 10px; */
