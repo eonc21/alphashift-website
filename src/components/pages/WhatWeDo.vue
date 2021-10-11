@@ -28,8 +28,12 @@
                 
                 
             </div>
-            <div id="button-container">
+            <!-- <div id="button-container">
                 Work with us >
+            </div> -->
+            <div id='button-container'>
+                <Button text="WORK WITH US" />
+
             </div>
 
             
@@ -44,6 +48,7 @@
 <script>
 import PageHeader from '../PageHeader.vue'
 import AnimatedComponent from '../AnimatedComponent.vue'
+import Button from '../Button.vue'
 import { VueperSlides, VueperSlide } from 'vueperslides'
 import 'vueperslides/dist/vueperslides.css'
 
@@ -64,14 +69,15 @@ if (width < 600) {
             PageHeader,
             VueperSlides, 
             VueperSlide,
-            AnimatedComponent
+            AnimatedComponent,
+            Button
 
         },
         data: () => ({
             slides: [
                     {
                     title: 'Slide #1',
-                    content: `<div style="display: flex; justify-content: center; 
+                    content: `<div style="display: flex; justify-content: center; margin-bottom: 40px;
                             text-align: center; width: ${w}vw; font-size: ${font}vw; align-self:">
                             As a data consultancy organization, we excel at 
                             supporting and leading our clients through a variety 
@@ -161,42 +167,36 @@ img {
 .black {
     background: #171717;
     display: flex;
-    justify-content: center;
+    justify-content: space-evenly;
     flex-direction: column;
 }
 
 #text-container {
     width: 95%;
-    height: 88%;
+    height: 75%;
     display: flex;
     flex-direction: column;
     align-items: center;
-    justify-content: center;
+    justify-content: space-evenly;
     align-self: center;
     font-family: 'Poppins', sans-serif;
 }
 
 #button-container {
+    margin-bottom: 7vh;
     display: flex;
     justify-content: center;
     align-items: center;
-    background: black;
-    height: 12%;
-    width: 30%;
-    text-align: center;
-    /* border: 1px pink solid; */
-    margin-top: auto;
-    font-family: 'Poppins', sans-serif;
-    font-size: 1.2rem;
-    border-radius: 0 20px 0 0px;
+
 }
 
 span {
     font-size: 1.9rem;
 }
 
+
 .red {
-    background: #661111;
+    background: #5a0d0d;
 }
 
 @media (max-width: 600px) {

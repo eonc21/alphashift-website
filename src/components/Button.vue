@@ -47,11 +47,15 @@
     box-shadow: 0px 0px 17px 4px rgba(173, 0, 0, 0.91);
     cursor: pointer;
     user-select: none;
-    
- 
-
 
 }
+@media (max-width: 600px) {
+    #btn {
+        font-size: 4vw;
+    }
+
+}
+
 
 
 </style>
