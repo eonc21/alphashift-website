@@ -6,7 +6,9 @@
         <div class ='process-page smaller'>
             <!-- <animated-component> -->
             <ProcessContainer :titles="titles.titlesbox1" :isLeft="true"/>
+
             <LineContainer />
+
             <ProcessContainer :titles="titles.titlesbox2"/>
             <!-- </animated-component> -->
 
@@ -101,5 +103,33 @@ p {
     margin:auto;
 }
 
+/* #lines {
+    display: flex;
+    width: 400px;
+} */
+
+
+@media (max-width: 600px) {
+    .process-page {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        height: fit-content;
+
+    }
+
+    #lines {
+    }
+
+    .smaller {
+        width: 80%;
+        justify-content: space-evenly;
+        flex-direction: column;
+        min-width:unset;
+    min-height: unset;
+
+    }
+
+}
 
 </style>

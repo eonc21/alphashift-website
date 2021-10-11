@@ -42,7 +42,7 @@ import MenuButton from "../MenuButton.vue"
     justify-content: flex-start;
     width: 100%;
     flex-direction: column;
-    height: 100%;
+    height: 100vh;
     background-color: #171717;
     color: rgba(255, 255, 255, 0.85);
 }

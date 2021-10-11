@@ -1,7 +1,10 @@
 <template>
     <div id='service-list'>
         <div :key="service.id" v-for="service in services" id='service'>
-            <Service :service="service"/>
+            <animated-component>
+                <Service :service="service"/>
+
+            </animated-component>
 
         </div>
     </div>
@@ -10,6 +13,8 @@
 
 <script>
 import Service from '../components/Service.vue'
+import AnimatedComponent from './AnimatedComponent.vue'
+
     export default {
         name: 'ServiceList',
 
@@ -19,6 +24,7 @@ import Service from '../components/Service.vue'
 
         components: {
             Service,
+            AnimatedComponent,
         }
         
     }
@@ -33,7 +39,7 @@ import Service from '../components/Service.vue'
     align-content: center;
     align-self: center;
     justify-content:center;
-    margin:auto;
+    /* margin:auto; */
     margin-top: 0px;
 }
 

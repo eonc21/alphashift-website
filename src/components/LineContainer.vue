@@ -12,7 +12,7 @@
            </p>
         </div>
 
-        <div class='half'>
+        <div id='second-arrow' class='half'>
              <div class="point left"></div>
             <div class='horizontal'></div>
 
@@ -80,6 +80,43 @@ width: 0;
     align-self: center;
     font-weight: 300;
     color: rgba(255, 255, 255, 0.8);
+}
+
+@media (max-width: 600px) {
+   
+    .horizontal {
+        border-left: 1px solid white;
+        border-bottom: 0;
+        /* width: 0%; */
+        /* height: 50%; */
+        
+    }
+
+    #second-arrow, .word, #text {
+        width: 0;
+        height: 0;
+        visibility: hidden;
+    }
+
+    .half {
+        height: 50%;
+        flex-direction: column;
+        align-self: center;
+
+
+    }
+
+    .point {
+        width: 0;
+        height: 0;
+           border-top: 8px solid rgba(255, 255, 255, 0.87);
+    border-bottom: 8px solid transparent;
+    border-left: 8px solid transparent;
+    border-right: 8px solid transparent;
+        align-self: flex-end;
+    }
+    
+
 }
 
 </style>

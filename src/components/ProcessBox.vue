@@ -63,4 +63,14 @@ text {
 
 }
 
+@media (max-width: 600px) {
+
+    #box-container {
+        height: 190px;
+        width:80vw;
+        font-size: 5.5vw;
+    }
+    
+}
+
 </style>

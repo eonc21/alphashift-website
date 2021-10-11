@@ -36,6 +36,9 @@
     display: flex;
     justify-content:center;
     width: 80%;
+    align-self: center;
+    text-align: center;
+    margin: auto;
     flex-direction: column;
     /* margin: 15px; */
 }
@@ -68,10 +71,11 @@ p {
 }
 
 img {
-    width: 100%
+    width: 100%;
+    height: 100%;
 }
 
-/* @media (max-width: 1000px){
+@media (max-width: 600px){
     #service {
         width: 90%;
         flex-direction: column;
@@ -85,7 +89,7 @@ img {
 
     p {
         font-size: 1.25rem;
-        width: 80%;
+        width: 90%;
         align-self: center;
         margin-bottom: 10vh;
     }
@@ -95,6 +99,6 @@ img {
         height: 4rem;
     }
     
-} */
+}
 
 </style>

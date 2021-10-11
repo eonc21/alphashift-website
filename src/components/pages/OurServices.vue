@@ -1,18 +1,21 @@
 <template>
     <div class="container">
         <div id='text-container'>
-            <animated-component>
+        
+        <div id='header-container'>
+<animated-component>
 
             <PageHeader text="OUR SERVICES" />
-            </animated-component>
 
-            <animated-component>
+            </animated-component>
+        </div>
+            
+
                 <ServiceList :services="services" />
-            </animated-component>
 
-            <div class='btn'>
                 <Button @click="buttonClick" text="LEARN MORE"/>
-            </div>
+            
+
         </div>
         
         
@@ -107,17 +110,28 @@ export default {
 
 #text-container {
     width: 90%;
-    height: 100%;
+    height: 95%;
     display: flex;
     align-self: center;
+    align-content: center;
     justify-content:space-evenly;
     flex-direction: column;
 }
 
 @media (max-width: 600px) {
     .container {
-        height: fit-content;
+        height:fit-content;
     }
+
+
+#text-container {
+    height: fit-content;
+    margin: 40px 0px;
+}
+
+#header-container {
+    margin-bottom: 40px;
+}
 
 }
 </style>

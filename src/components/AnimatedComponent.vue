@@ -26,7 +26,7 @@ export default {
         animate.value = entry.isIntersecting;
       },
       {
-        threshold: 0.5
+        threshold: 0.4
       }
     );
     onMounted(() => {

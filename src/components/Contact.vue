@@ -6,7 +6,6 @@
         type="email"
         label="Email:"
         placeholder="Your email"
-        success-message="Nice to meet you!"
       />
       
 
@@ -15,7 +14,6 @@
         type="text"
         label="Name:"
         placeholder="Your name"
-        success-message="Nice to meet you!"
       />
       <div class='checkboxes'>
         <Field v-slot="{ field }" name="apply" type="checkbox" :value="false">
@@ -37,7 +35,6 @@
         type="text"
         label="Message:"
         placeholder="Your thoughts"
-        success-message="Nice to meet you!"
       />
 
       <Button text="SUBMIT"/>

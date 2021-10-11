@@ -213,7 +213,7 @@ span {
     .red {
         order: 2;
         justify-content: center;
-        height:100vh;
+        height:65vh;
 
     }
 

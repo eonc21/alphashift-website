@@ -99,8 +99,9 @@ body::-webkit-scrollbar-thumb {
 
 @media (max-width: 600px){
   .view-container {
+    height: fit-content;
     max-width: 100vw;
-    overflow: hidden;
+    /* overflow: hidden; */
   }
 }
 
