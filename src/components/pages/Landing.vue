@@ -67,14 +67,23 @@ import MenuButton from "../MenuButton.vue"
 
 }
 
-@media (max-width: 1000px){
+@media (max-width: 600px) {
+    #menu-container {
+        height: 12.5%;
+        margin: 30px 0px 0px 30px;
+    }
 
-  #landing-page {
-    height: fit-content;
-    /* width: 100vw; */
-    max-width: 100vw;
+    #title-container {
+        width: 85%;
+        height: 80%;
+        align-self: center;
+        text-align: center;
+        margin: 0;
+        justify-content: space-evenly;
+    }
+
 }
-}
+
 
 
 

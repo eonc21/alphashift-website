@@ -35,10 +35,10 @@
         </div>
 
         <div class='social'>
-            <div class='image-container'>
+            <a href="mailto:oncelinor@gmail.com" class='image-container'>
                 <img src="https://res.cloudinary.com/gromceri-test/image/upload/v1633903356/AlphaShift/linkedin-logo-white_juanmj.png" alt="">
-            </div>
-            <a href='#'>
+            </a>
+            <a href=''>
             </a>
         </div>
         
@@ -198,13 +198,5 @@ p {
 
 }
 
-@media (max-width: 1000px){
-
-  #conclusion-page {
-    height: fit-content;
-    /* width: 100vw; */
-    max-width: 100vw;
-}
-}
 
 </style>

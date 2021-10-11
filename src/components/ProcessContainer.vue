@@ -85,5 +85,10 @@ import ProcessBox from '../components/ProcessBox.vue'
     
 }
 
+@media (max-width: 600px) {
+    
+}
+
+
 
 </style>

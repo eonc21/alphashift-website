@@ -1,5 +1,5 @@
 <template>
-    <div>
+    <div class='subtitle-container'>
         <text id='subtitle'>
             {{ subtitle }}
         </text>
@@ -35,6 +35,24 @@
         
         font-size: 1.9rem;
     }
+
+
+    @media (max-width: 600px){
+
+        #subtitle {
+            font-size: 5vw;
+            align-self: center;
+            
+        }
+
+        .subtitle-container {
+            display: flex;
+            height: 30%;
+            width: 100%;
+        
+
+        }
+    } 
 
 
 </style>

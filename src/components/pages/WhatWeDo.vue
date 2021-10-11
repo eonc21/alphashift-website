@@ -13,14 +13,14 @@
                 </animated-component>
 
                 <div id="slides-container">
-                        <VueperSlides  class="no-shadow" :bullets="false" fixed-height="100%">
+                        <VueperSlides  class="no-shadow" :arrows="false" :bullets="true" fixed-height="100%">
                         <vueper-slide v-for="(slide, i) in slides" 
                             :content="slide.content" 
                             :key="i"
                             :style="`display: flex; 
                             color: rgba(255, 255, 255, 0.82); 
                             font-size: 1.45vw;
-                             height: fit-conntent;`"/>
+                    `"/>
                     </VueperSlides>
                     
                 </div>
@@ -29,7 +29,7 @@
                 
             </div>
             <div id="button-container">
-                Work with us ⮞
+                Work with us >
             </div>
 
             
@@ -47,6 +47,15 @@ import AnimatedComponent from '../AnimatedComponent.vue'
 import { VueperSlides, VueperSlide } from 'vueperslides'
 import 'vueperslides/dist/vueperslides.css'
 
+let font = 1.45
+let w = 30
+
+let width = window.innerWidth
+if (width < 600) {
+    font = 4.5
+    w = 80
+}
+
 
     export default {
         name: 'WhatWeDo',
@@ -63,7 +72,7 @@ import 'vueperslides/dist/vueperslides.css'
                     {
                     title: 'Slide #1',
                     content: `<div style="display: flex; justify-content: center; 
-                            text-align: center; width: 30vw; align-self:">
+                            text-align: center; width: ${w}vw; font-size: ${font}vw; align-self:">
                             As a data consultancy organization, we excel at 
                             supporting and leading our clients through a variety 
                             of data-related business solutions tailored to 
@@ -75,7 +84,7 @@ import 'vueperslides/dist/vueperslides.css'
                     {
                     title: 'Slide #2',
                     content: `<div style="display: flex; justify-content: center; 
-                            text-align: center; width: 30vw; align-self:">The services include exploratory data analysis, data
+                            text-align: center; width: ${w}vw; font-size: ${font}vw; align-self:">The services include exploratory data analysis, data
                                 management, creating prediction models, and 
                                 the production of entire decision support systems and
                                 data-powered products.`
@@ -84,7 +93,7 @@ import 'vueperslides/dist/vueperslides.css'
                     {
                     title: 'Slide #3',
                     content: `<div style="display: flex; justify-content: center; 
-                            text-align: center; width: 30vw; align-self:">We perform extensive study and analysis to discover 
+                            text-align: center; width: ${w}vw; font-size: ${font}vw; align-self:">We perform extensive study and analysis to discover 
                             the correct technology to  power it all, keeping our 
                             clients' business demands at the forefront of our approach.`
                     },
@@ -136,10 +145,10 @@ import 'vueperslides/dist/vueperslides.css'
 
 }
 
-.vueperslides_bullets {
+/* .vueperslides_bullets {
     position: inherit;
-    padding: 150px;
-}
+    padding: 100px;
+} */
 
 img {
     width: 100%;
@@ -190,19 +199,44 @@ span {
     background: #661111;
 }
 
-@media (max-width: 1000px){
+@media (max-width: 600px) {
 
-  #what-are-we-page {
-      flex-direction: column;
-    height: fit-content;
-    /* width: 100vw; */
-    max-width: 100vw;
+    #what-are-we-page {
+        height: fit-content;
+        flex-direction: column;
+    }
+
+    .half-page {
+        width: 100%;
+    }
+
+    .red {
+        order: 2;
+        justify-content: center;
+        height:100vh;
+
+    }
+
+    .black {
+        order: 1;
+        height:100vh;
+
+       /* height: fit-content; */
+    }
+
+    #image-container {
+        justify-content: center;
+        border-radius: 0;
+        width: 100%;
+        height: 100%;
+    }
+
+    img {
+        border-radius: 0;
+    }
+
 }
 
-.half-page {
-    width:100%;
-    height: 500px;
-}
-}
+
 
 </style>

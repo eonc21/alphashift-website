@@ -101,12 +101,5 @@ p {
     margin:auto;
 }
 
-@media (max-width: 1000px){
-
-  .smaller {
-    flex-direction: column;
-    /* width: 100vw; */
-}
-}
 
 </style>

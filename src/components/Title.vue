@@ -13,16 +13,30 @@
         
     }
 </script>
-
 <style scoped>
 
     #title {
         display: flex;
         width: 100%;
         justify-content: space-between;
-        font-size: 6.25rem;
+        font-size: 5.25vw;
         font-weight: 400;
         
     }
+
+@media (max-width: 600px) {
+        #title {
+        font-size: 12vw;
+        justify-content: center;
+        }
+
+        text {
+            width: 90%;
+            display: flex;
+
+        }
+    
+
+} 
 
 </style>

@@ -114,10 +114,10 @@ export default {
     flex-direction: column;
 }
 
-@media (max-width: 1000px){
+@media (max-width: 600px) {
     .container {
         height: fit-content;
-        max-width: 100vw;
     }
+
 }
 </style>

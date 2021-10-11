@@ -97,12 +97,11 @@ body::-webkit-scrollbar-thumb {
   max-width: 100%;
 }
 
-@media (max-width: 1000px){
-
+@media (max-width: 600px){
   .view-container {
-    height: fit-content;
-    /* width: 100vw; */
     max-width: 100vw;
+    overflow: hidden;
+  }
 }
-}
+
 </style>

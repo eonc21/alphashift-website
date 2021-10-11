@@ -71,7 +71,7 @@ img {
     width: 100%
 }
 
-@media (max-width: 1000px){
+/* @media (max-width: 1000px){
     #service {
         width: 90%;
         flex-direction: column;
@@ -95,6 +95,6 @@ img {
         height: 4rem;
     }
     
-}
+} */
 
 </style>

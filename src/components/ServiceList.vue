@@ -43,7 +43,7 @@ import Service from '../components/Service.vue'
     justify-content: center;
 }
 
-@media (max-width: 1000px){
+@media (max-width: 600px){
     #service-list {
         flex-direction: column;
         width: 100%
