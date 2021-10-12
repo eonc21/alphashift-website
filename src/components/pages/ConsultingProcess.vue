@@ -125,6 +125,7 @@ p {
    
     .smaller {
         width: 80%;
+        margin: 15% 0%;
         justify-content: space-evenly;
         flex-direction: column;
         min-width:unset;

@@ -38,7 +38,7 @@
     /* background: #000000a6; */
     backdrop-filter: blur(8px);
 
-    border: 1px solid rgba(255, 255, 255, 0.856);
+    border: 1px solid rgba(255, 255, 255, 0.85);
     color: rgba(255, 255, 255, 0.856);
     min-width: 200px;
 
@@ -59,6 +59,7 @@ text {
     height: 30%;
     font-family: "Poppins", sans-serif;
     margin-bottom: 10%;
+    color: #868686;
     min-width: 160px;
 
 }
@@ -67,8 +68,15 @@ text {
 
     #box-container {
         height: 190px;
+        justify-content: center;
         width:80vw;
-        font-size: 5.5vw;
+        border: 0.5px solid rgba(255, 255, 255, 0.856);
+        font-size: 7vw;
+    }
+    text {
+        width: 90%;
+        letter-spacing: 1px;
+        font-size: 4.5vw;
     }
     
 }

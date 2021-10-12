@@ -74,6 +74,10 @@ width: 0;
     font-size: 1.75rem;
 }
 
+.point {
+    align-self: flex-end;
+}
+
 #text {
     font-size: 2.5vw;
     width: 80%;
@@ -85,8 +89,14 @@ width: 0;
 @media (max-width: 600px) {
    
     .horizontal {
+        align-self: flex-end;
         /* /* border-left: 1px solid white; */
         border-bottom: 0; 
+        width: 50%;
+        height: 100%;
+        /* border-left: 1px solid white; */
+
+        /* height: 0rem; */
         /* width: 0%;  */
         
     }
@@ -99,8 +109,9 @@ width: 0;
 
     .half {
         height: 100%;
-        width: 50%;
-        border-right: 1px solid white;
+        width: 100%;
+        flex-direction: column;
+        /* justify-content: ; */
         text-align: center;
 }
 
@@ -110,18 +121,21 @@ width: 0;
     .point {
        
            border-top: 8px solid rgba(255, 255, 255, 0.87);
-    border-bottom: 8px solid transparent;
-    border-left: 8px solid transparent;
-    border-right: 8px solid transparent;
+        border-bottom: 8px solid transparent;
+        border-left: 8px solid transparent;
+        border-right: 8px solid transparent;
     
-    align-self: flex-end;
+    align-self: center;
     
 
     }
 
 
     #middle-container {
-        height: 45px;
+        flex-direction: column;
+        width: 100%;
+        height: 40px;
+        /* align-self: flex-end; */
     
     
     }
