@@ -77,7 +77,6 @@ export default {
   methods: {
 
      async getFormValues (submitEvent) {
-      console.log(submitEvent.target.message.value)
       return {
 
         from_email: submitEvent.target.email.value,
@@ -87,20 +86,30 @@ export default {
       }
     },
 
+
     async sendEmail(submitEvent) {
       alert(submitEvent.target.email)
             submitEvent.preventDefault();
 
-     let payload =  await this.getFormValues(submitEvent)
+      let payload =  await this.getFormValues(submitEvent)
     //   alert("payload")
+      let validEmail = await this.validateEmail(submitEvent.target.email.value)
+      let validNameAndMessage = await this.validateText(submitEvent.target.name.value, 
+                            submitEvent.target.message.value)
+
 
       try {
-        emailjs.send('service_bjn1xnj', 'template_klkrcgq', payload,
-        'user_qK5SJr6uQBEQWxZq1lBVZ', {
-          name: this.name,
-          email: this.email,
-          message: this.message
+        if (validEmail && validNameAndMessage) {
+          emailjs.send('service_bjn1xnj', 'template_klkrcgq', payload,
+            'user_qK5SJr6uQBEQWxZq1lBVZ', {
+              name: this.name,
+              email: this.email,
+              message: this.message
         })
+        } else {
+          alert("Do not leave any inputs empty and make sure you do not use numbers and symbols in your name.")
+        }
+        
 
       } catch(error) {
           console.log({error})
@@ -114,18 +123,34 @@ export default {
     // onSubmit(values) {
     //   console.log(JSON.stringify(values, null, 2));
     // },
-    validateEmail(value) {
+    async validateEmail(value) {
       // if the field is empty
       if (!value) {
-        return 'This field is required';
+        return false;
       }
       // if the field is not a valid email
       const regex = /^[A-Z0-9._%+-]+@[A-Z0-9.-]+\.[A-Z]{2,4}$/i;
       if (!regex.test(value)) {
-        return 'This field must be a valid email';
+        return false;
       }
       // All is good
       return true;
+    },
+
+    async validateText(name, message) {
+      const regex  = /^[a-zA-Z\s]*$/;  
+      console.log(name)
+
+      if (regex.test(name) && name && message) {
+        console.log("shits good")
+        return true;
+
+
+      }
+
+      return false;
+
+
     },
   },
 
