@@ -68,7 +68,8 @@ button {
 
 }
 @media (max-width: 600px) {
-    #btn {
+
+    text {
         font-size: 4vw;
     }
 

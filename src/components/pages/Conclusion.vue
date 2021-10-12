@@ -1,14 +1,14 @@
 <template>
   <div id='conclusion-page'>
-      <div id='container'>
+        <div id='container'>
             <PageHeader text="INTERESTED? CONTACT US." />
-      <div id='form-container'>
-          <Contact />
-      </div>
-      </div>
-      
-      
+            <div id='form-container'>
+                <Contact />
+            </div>
+        </div>
   </div>
+
+
   <footer>
       <div id='container'>
 
@@ -195,6 +195,36 @@ p {
     /* flex:1; */
     justify-content: space-evenly;
     height: 80%;
+}
+
+@media (max-width: 600px) {
+    #conclusion-page {
+        height: 110vh;
+    }
+
+    #form-container { 
+        display: flex;
+        align-self: center;
+        height: 80%;
+    }
+
+    #container {
+        width: 70%;
+
+    }
+
+    .info {
+        width: 100%;
+        font-size: 6vw;
+    }
+
+    #footer-text {
+        width: 100%;
+    }
+
+    #info {
+        font-size: 3.5vw;
+    }
 
 }
 

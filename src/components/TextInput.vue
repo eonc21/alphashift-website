@@ -99,7 +99,6 @@ label {
 }
 
 input {
-  /* border-radius: 5px; */
   border: 0.5px solid rgba(255, 255, 255, 0.856);
   padding: 15px 10px;
   background-color: #171717;
@@ -145,4 +144,24 @@ input {
 .TextInput.success .help-message {
   color: var(--success-color);
 }
+
+@media (max-width: 600px) {
+    .TextInput {
+      width: 100%;
+      height: 8%;
+      font-size: 4vw;
+
+    }
+
+    input {
+      width: 57vw;
+      padding: 12px 10px;
+      font-size: 3.4vw;
+      font-family: "Poppins", sans-serif;
+      border-radius: 0px;
+      
+    }
+
+}
+
 </style>

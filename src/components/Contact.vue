@@ -17,13 +17,17 @@
         placeholder="Your name"
       />
       <div class='checkboxes'>
-          <input class="box" id="applicant" type="checkbox" value="applicant" name="apply" v-model="checkedBoxes"/>
+        <div class="box">
+            <input id="applicant" type="checkbox" value="applicant" name="apply" v-model="checkedBoxes"/>
           <label for="applicant" class="checkbox">I want to work at AlphaShift.</label>
-
-
-         
-          <input class="box" id="customer" type="checkbox" value="customer" name="customer" v-model="checkedBoxes"/>
+        </div>
+          
+        <div class="box">
+            <input id="customer" type="checkbox" value="customer" name="customer" v-model="checkedBoxes"/>
            <label for="customer" class="checkbox">I want to be a customer.</label>
+        </div>
+         
+          
         
       </div>     
      
@@ -39,6 +43,7 @@
 
       <Button :buttonClick="sendEmail"
       text="SUBMIT FORM" :type="submit"/>
+
 
 
     </form>
@@ -176,19 +181,45 @@ form {
 }
 .checkbox {
   display: flex;
-  width: 50%;
+  width: 100%;
   /* align-self: center; */
   justify-content: center;
 }
 
 .box {
+  display: flex;
   margin-right: 20px;
   
   /* width: 80px; */
 }
 
 input[type=checkbox] {
+  background: #4273DE;
+  color: #fff;
     transform: scale(1.6);
+    margin-right: 20px;
+    border-radius: 1px;
+    outline: none;
+    box-shadow: 0;
+    background-color: rgba(0, 0, 0, 0);
+    border: 0;
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    appearance: none;
+    border: solid 1px rgba(255, 255, 255, 0.863);
+    width: 15px;
+    height: 13px;
+  /* background: red; */
+
+}
+
+
+input[type=checkbox]:checked {
+  background: rgb(116, 20, 20);
+}
+
+#applicant {
+
 }
 
 
@@ -199,7 +230,7 @@ input[type=checkbox] {
   height: 75px;
   text-align: center;
   align-items: center;
-  width: 90%;
+  width: 85%;
   align-self: center;
   font-size: 1.5vw;
 }
@@ -218,6 +249,42 @@ button {
   width: 20%;
   margin: auto;
   align-self: center;
+}
+
+@media (max-width: 600px) {
+    form {
+        width: 80vw;
+        height: 100%;
+        justify-content: space-evenly;
+        }
+
+    .checkboxes {
+      /* justify-content: flex-start; */
+      flex-direction: column;
+      align-self: flex-start;
+      font-size: 4vw;
+      text-align: left;
+    }
+
+    .checkbox {
+      width: 100%;
+      align-self: flex-start;
+      justify-content: flex-start;
+      /* margin: 0; */
+    }
+
+    .box {
+      width: 100%;
+      justify-content: flex-start;
+      align-items: flex-start;
+      align-content: flex-start;
+      margin: 0;
+    }
+
+    input[type=checkbox] {
+      /* margin: 0; */
+    }
+
 }
 
 </style>
