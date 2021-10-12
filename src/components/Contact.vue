@@ -1,9 +1,10 @@
 <template>
   <div class="form">
-    <Form  @submit="onSubmit">
+    <form @submit.prevent="sendEmail">
       <TextInput
         name="email"
         type="email"
+        v-model="name"
         label="Email:"
         placeholder="Your email"
       />
@@ -16,55 +17,103 @@
         placeholder="Your name"
       />
       <div class='checkboxes'>
-        <Field v-slot="{ field }" name="apply" type="checkbox" :value="false">
-          <label>
-            <input type="checkbox" name="apply" v-bind="field" :value="false" />
-             I want to work at AlphaShift.
-          </label>
-        </Field>
-        <Field v-slot="{ field }" name="customer" type="checkbox" :value="false">
-          <label>
-            <input type="checkbox" name="customer" v-bind="field" :value="false" />
-               I want to be a customer.
-          </label>
-        </Field>
+          <input class="box" id="applicant" type="checkbox" value="applicant" name="apply" v-model="checkedBoxes"/>
+          <label for="applicant" class="checkbox">I want to work at AlphaShift.</label>
+
+
+         
+          <input class="box" id="customer" type="checkbox" value="customer" name="customer" v-model="checkedBoxes"/>
+           <label for="customer" class="checkbox">I want to be a customer.</label>
+        
       </div>     
+     
 
       <TextInput
         name="message"
         type="text"
-        label="Message:"
+        label="Notes:"
         placeholder="Your thoughts"
       />
+      <br>
+                <!-- <input type="submit" value="Send"> -->
 
-      <Button text="SUBMIT"/>
+      <Button :buttonClick="sendEmail"
+      text="SUBMIT FORM" :type="submit"/>
 
 
-    </Form>
+    </form>
   </div>
   
 </template>
 
 <script>
-import { Form, Field } from 'vee-validate';
+// import {  Field } from 'vee-validate';
 import TextInput from './TextInput.vue'
 import Button from './Button.vue'
-
+import emailjs from 'emailjs-com';
+// let globalPayload = {}
 
 export default {
 
+  
+
     name: 'Contact',
   components: {
-    Form,
-    Field,
+    // Form,
+    // Field,
     Button,
     TextInput,
   },
 
+  data() {
+    return {
+      checkedBoxes: [],
+      name: '',
+      email: '',
+      message: ''
+    }
+  },
+
   methods: {
-    onSubmit(values) {
-      console.log(JSON.stringify(values, null, 2));
+
+     async getFormValues (submitEvent) {
+      console.log(submitEvent.target.message.value)
+      return {
+
+        from_email: submitEvent.target.email.value,
+        from_name: submitEvent.target.name.value,
+        user_title: this.checkedBoxes,
+        user_message: submitEvent.target.message.value,
+      }
     },
+
+    async sendEmail(submitEvent) {
+      alert(submitEvent.target.email)
+            submitEvent.preventDefault();
+
+     let payload =  await this.getFormValues(submitEvent)
+    //   alert("payload")
+
+      try {
+        emailjs.send('service_bjn1xnj', 'template_klkrcgq', payload,
+        'user_qK5SJr6uQBEQWxZq1lBVZ', {
+          name: this.name,
+          email: this.email,
+          message: this.message
+        })
+
+      } catch(error) {
+          console.log({error})
+      }
+      // Reset form field
+      this.name = ''
+      this.email = ''
+      this.message = ''
+    },
+
+    // onSubmit(values) {
+    //   console.log(JSON.stringify(values, null, 2));
+    // },
     validateEmail(value) {
       // if the field is empty
       if (!value) {
@@ -80,17 +129,7 @@ export default {
     },
   },
 
-    // data() {
-    //   return {
-    //     options: {
-    //     inquiry: [
-    //       { value: 'feature', text: "Feature Request"},
-    //       { value: 'bug', text: "Bug Report"},
-    //     ]
-    //   }
-    // }
-    //   }
-    }
+}
       
 
 </script>
@@ -102,17 +141,31 @@ form {
     display: flex;
     flex-direction: column;
     justify-content: flex-start;
+    margin: 50px 0;
     width: 100%;
     height:550px;
-    margin:auto;
+    /* margin:auto; */
     font-family: "Poppins", sans-serif;
     /* color: rgba(255, 255, 255, 0.856); */
     /* border: 1px solid red; */
 }
-label {
+.checkbox {
   display: flex;
-  /* width: 35%; */
+  width: 50%;
+  /* align-self: center; */
+  justify-content: center;
 }
+
+.box {
+  margin-right: 20px;
+  
+  /* width: 80px; */
+}
+
+input[type=checkbox] {
+    transform: scale(1.6);
+}
+
 
 .checkboxes {
   display: flex;
@@ -121,7 +174,7 @@ label {
   height: 75px;
   text-align: center;
   align-items: center;
-  width: 75%;
+  width: 90%;
   align-self: center;
   font-size: 1.5vw;
 }
@@ -131,9 +184,10 @@ input {
   /* width: 100%; */
   align-self: center;
   text-align: center;
-  margin-right: 10px;
 
 }
+
+
 
 button {
   width: 20%;

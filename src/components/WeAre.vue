@@ -49,7 +49,7 @@ span {
 
 @media (max-width: 600px) {
     p {
-        font-size: 4.5vw;
+        font-size: 4vw;
         margin-top: 30px;
     }
 

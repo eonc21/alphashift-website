@@ -129,7 +129,7 @@ p {
         justify-content: space-evenly;
         flex-direction: column;
         min-width:unset;
-    min-height: unset;
+        min-height: unset;
 
     }
 

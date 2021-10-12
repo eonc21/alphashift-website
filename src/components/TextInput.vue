@@ -79,8 +79,9 @@ export default {
 
 display: flex;
 height: 100px;
-  width: 80%;
+  width: 90%;
   align-self: center;
+  justify-content: space-between;
   /* border: 1px solid seagreen; */
   text-align: center;
   font-size: 1.7vw;
@@ -92,17 +93,17 @@ label {
   display: flex;
   align-self: center;
   margin-bottom: 4px;
-  width: 30%;
+  /* width: 30%; */
   justify-content: center;
 
 }
 
 input {
-  border-radius: 5px;
-  border: 1px solid white;
+  /* border-radius: 5px; */
+  border: 0.5px solid rgba(255, 255, 255, 0.856);
   padding: 15px 10px;
   background-color: #171717;
-  width: 100%;
+  width: 40vw;
   transition: border-color 0.3s ease-in-out, color 0.3s ease-in-out,
     background-color 0.3s ease-in-out;
   font-size: 1.5vw;
