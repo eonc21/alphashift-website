@@ -118,9 +118,11 @@ p {
 
     }
 
-    #lines {
+    #page {
+        background: #171717;
     }
 
+   
     .smaller {
         width: 80%;
         justify-content: space-evenly;

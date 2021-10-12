@@ -85,10 +85,9 @@ width: 0;
 @media (max-width: 600px) {
    
     .horizontal {
-        border-left: 1px solid white;
-        border-bottom: 0;
-        /* width: 0%; */
-        /* height: 50%; */
+        /* /* border-left: 1px solid white; */
+        border-bottom: 0; 
+        /* width: 0%;  */
         
     }
 
@@ -99,22 +98,34 @@ width: 0;
     }
 
     .half {
-        height: 50%;
-        flex-direction: column;
-        align-self: center;
+        height: 100%;
+        width: 50%;
+        border-right: 1px solid white;
+        text-align: center;
+}
 
 
-    }
+    
 
     .point {
-        width: 0;
-        height: 0;
+       
            border-top: 8px solid rgba(255, 255, 255, 0.87);
     border-bottom: 8px solid transparent;
     border-left: 8px solid transparent;
     border-right: 8px solid transparent;
-        align-self: flex-end;
+    
+    align-self: flex-end;
+    
+
     }
+
+
+    #middle-container {
+        height: 45px;
+    
+    
+    }
+    
     
 
 }

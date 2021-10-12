@@ -90,22 +90,25 @@ import ProcessBox from '../components/ProcessBox.vue'
     #main-container {
         width: 80vw;
         height: 600px;
-        justify-content: center;
+        justify-content: space-evenly;
         align-self: flex-start;
     }
 
     #line-container {
         align-self: center;
-        height: 20%;
+        height: 10%;
+        /* margin:auto; */
     }
 
     #line {
         width: 50%;
+        height: 30px;
     }
 
     #word {
         height: 0;
-        width: 0;
+        
+        width: 0px;
         visibility: hidden;
 
     }
