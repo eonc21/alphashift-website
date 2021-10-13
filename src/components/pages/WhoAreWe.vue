@@ -46,7 +46,7 @@ import AnimatedComponent from '../AnimatedComponent.vue'
     align-items: center;
     width: 100;
     height: 100vh;
-    background-image: linear-gradient(0deg, rgba(22, 22, 22, 0.85), rgba(22, 22, 22, 0.85)), url('../../assets/landing.jpg');
+    background-image: linear-gradient(0deg, rgba(22, 22, 22, 0.85), rgba(22, 22, 22, 0.85)), url('https://res.cloudinary.com/gromceri-test/image/upload/v1634156327/AlphaShift/landing_vr3bmk.jpg');
     mix-blend-mode: normal;
     background-size: cover;
 }

@@ -2,7 +2,7 @@
     <div id="what-are-we-page">
         <div class="half-page red">
             <div id="image-container">
-                <img src="../../assets/whatwedo.png" />
+                <img src="https://res.cloudinary.com/gromceri-test/image/upload/v1634156252/AlphaShift/whatwedo_uiqez7.jpg" />
             </div>
             
         </div>
