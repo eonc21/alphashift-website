@@ -54,8 +54,17 @@ import AnimatedComponent from './AnimatedComponent.vue'
         flex-direction: column;
         width: 100%;
     
-    }
+    }   
+}
+
+
+@media (max-width: 1000px){
+    #service-list {
+        flex-direction: column;
+        margin: 70px 0 0 0;
+        width: 100%;
     
+    }   
 }
 
 </style>

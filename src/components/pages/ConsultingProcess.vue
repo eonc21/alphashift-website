@@ -108,6 +108,24 @@ p {
     width: 400px;
 } */
 
+@media (max-width: 1000px) {
+    .process-page {
+        height: 100vh;
+        justify-content: center;
+
+    }
+
+    .smaller {
+        height: 65vh;
+        width: 80vw;
+        align-self: center;
+        margin-right: 200px;
+        margin-left: 200px;
+        
+
+    }
+
+}
 
 @media (max-width: 600px) {
     .process-page {
@@ -132,7 +150,6 @@ p {
         min-height: unset;
 
     }
-
 }
 
 </style>

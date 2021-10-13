@@ -251,6 +251,39 @@ button {
   align-self: center;
 }
 
+@media (max-width: 1000px) {
+    form {
+        width: 100%;
+        height: 100%;
+        justify-content: space-evenly;
+        }
+
+    .checkboxes {
+      font-size: 2.25vw;
+      width: 100%;
+      justify-content: center;
+      align-self: center;
+    }
+
+    .checkbox {
+      width: 100%;
+      align-self: flex-start;
+      justify-content: flex-start;
+      /* margin: 0; */
+    }
+
+    .box {
+      width: 100%;
+      justify-content: flex-start;
+
+    }
+
+    input[type=checkbox] {
+      /* margin: 0; */
+    }
+
+}
+
 @media (max-width: 600px) {
     form {
         width: 80vw;

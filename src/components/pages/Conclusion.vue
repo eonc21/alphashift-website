@@ -127,7 +127,7 @@ footer {
     display: flex;
     color: white;
     /* height: 40%; */
-    width: 15%;
+    width: 20%;
     justify-content: space-evenly;
     font-size: 1.75vw;
     align-items: center;
@@ -194,14 +194,38 @@ p {
     align-self: center;
 }
 
-#container {
-    display: flex;
-    flex-direction: column;
-    align-self: center;
-    /* flex:1; */
-    justify-content: space-evenly;
-    height: 80%;
-}
+
+
+@media (max-width: 1000px) {
+
+    #form-container {
+        width: 80%;
+    }
+
+    #conclusion-page {
+        height: 110vh;
+    }
+    #container {
+        height: 100%;
+        justify-content: space-evenly;
+    }
+
+    .info {
+        width: 60%;
+        font-size: 2.5vw;
+    }
+
+    #footer-text {
+        width: 30%;
+        height: 20%;
+        margin: 0;
+    }
+
+    #info {
+        font-size: 1.5vw;
+    }
+  
+    }
 
 @media (max-width: 600px) {
     #conclusion-page {

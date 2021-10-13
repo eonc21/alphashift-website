@@ -145,6 +145,24 @@ input {
   color: var(--success-color);
 }
 
+@media (max-width: 1000px) {
+    .TextInput {
+      width: 100%;
+      font-size: 2.75vw;
+
+    }
+
+    input {
+      width: 57vw;
+      padding: 12px 10px;
+      font-size: 2.75vw;
+      font-family: "Poppins", sans-serif;
+      border-radius: 0px;
+      
+    }
+
+}
+
 @media (max-width: 600px) {
     .TextInput {
       width: 100%;

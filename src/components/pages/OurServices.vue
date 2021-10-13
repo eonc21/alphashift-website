@@ -118,6 +118,19 @@ export default {
     flex-direction: column;
 }
 
+@media (max-width: 1000px) {
+    .container {
+        height:fit-content;
+    }
+
+    #text-container {
+        margin: 70px 0px;
+}
+
+
+}
+
+
 @media (max-width: 600px) {
     .container {
         height:fit-content;

@@ -64,6 +64,21 @@ text {
 
 }
 
+@media (max-width: 1000px) {
+
+    #box-container {
+        height: 170px;
+        font-size: 2.65vw;
+    }
+
+    text {
+        width: 90%;
+        letter-spacing: 1px;
+        font-size: 1.75vw;
+    }
+    
+}
+
 @media (max-width: 600px) {
 
     #box-container {

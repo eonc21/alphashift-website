@@ -102,7 +102,7 @@ body::-webkit-scrollbar-thumb {
 
 }
 
-@media (max-width: 600px){
+@media (max-width: 1000px){
   .view-container {
     height: fit-content;
     max-width: 100vw;

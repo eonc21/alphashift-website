@@ -70,13 +70,23 @@ button {
     user-select: none;
 
 }
+
+
+@media (max-width: 1000px) {
+
+    text {
+        font-size: 3vw;
+    }
+
+}
+
 @media (max-width: 600px) {
 
     text {
         font-size: 4vw;
     }
-
 }
+
 
 
 

@@ -75,7 +75,7 @@ img {
     height: 100%;
 }
 
-@media (max-width: 600px){
+@media (max-width: 1000px){
     #service {
         width: 90%;
         flex-direction: column;

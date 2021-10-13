@@ -52,7 +52,7 @@ width: 0;
   border-top: 8px solid transparent;
   border-bottom: 8px solid transparent;
   border-left: 8px solid rgba(255, 255, 255, 0.87);
-  align-self: center;
+  align-self:center;
 }
 
 .left {
@@ -74,9 +74,6 @@ width: 0;
     font-size: 1.75rem;
 }
 
-.point {
-    align-self: flex-end;
-}
 
 #text {
     font-size: 2.5vw;
@@ -84,6 +81,28 @@ width: 0;
     align-self: center;
     font-weight: 300;
     color: rgba(255, 255, 255, 0.8);
+}
+
+
+@media (max-width: 1000px) {
+    #middle-container {
+        flex-direction: column;
+        width: 40%;
+        /* height: px; */
+        /* align-self: flex-end; */
+    
+    }
+
+    .horizontal {
+        
+        width: 200px;
+       
+        
+    }
+
+    #text {
+        font-size: 4vw;
+    }
 }
 
 @media (max-width: 600px) {
@@ -115,17 +134,13 @@ width: 0;
         text-align: center;
 }
 
-
-    
-
     .point {
        
-           border-top: 8px solid rgba(255, 255, 255, 0.87);
+        border-top: 8px solid rgba(255, 255, 255, 0.87);
         border-bottom: 8px solid transparent;
         border-left: 8px solid transparent;
         border-right: 8px solid transparent;
-    
-    align-self: center;
+        align-self: center;
     
 
     }
@@ -136,7 +151,6 @@ width: 0;
         width: 100%;
         height: 40px;
         /* align-self: flex-end; */
-    
     
     }
     

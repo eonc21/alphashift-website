@@ -54,6 +54,12 @@ let font = 1.45
 let w = 30
 
 let width = window.innerWidth
+
+if (width < 1000) {
+    font = 3.35
+    w = 80
+}
+
 if (width < 600) {
     font = 4.5
     w = 80
@@ -195,6 +201,44 @@ span {
 
 .red {
     background: #5a0d0d;
+}
+
+@media (max-width: 1000px) {
+
+    #what-are-we-page {
+        height: fit-content;
+        flex-direction: column;
+    }
+
+    .half-page {
+        width: 100%;
+    }
+
+    .red {
+        order: 2;
+        justify-content: center;
+        height:60vh;
+
+    }
+
+    .black {
+        order: 1;
+        height:100vh;
+
+       /* height: fit-content; */
+    }
+
+    #image-container {
+        justify-content: center;
+        border-radius: 0;
+        width: 100%;
+        height: 100%;
+    }
+
+    img {
+        border-radius: 0;
+    }
+
 }
 
 @media (max-width: 600px) {
