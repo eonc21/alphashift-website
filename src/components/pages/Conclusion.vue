@@ -114,7 +114,7 @@ export default {
 
 #mail {
     width: 50%;
-    height: 40%;
+    height: 41%;
 }
 
 footer {
