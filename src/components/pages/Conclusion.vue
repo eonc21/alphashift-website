@@ -21,10 +21,11 @@
 
     <div id='footer-text'>
         <div class='social'>
+            <a href='https://www.linkedin.com/company/alphashift-consulting-group/about/'>
+
             <div class='image-container'>
                 <img src="https://res.cloudinary.com/gromceri-test/image/upload/v1633903356/AlphaShift/linkedin-logo-white_juanmj.png" alt="">
             </div>
-            <a href='#'>
             </a>
         </div>
         

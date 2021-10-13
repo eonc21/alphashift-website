@@ -12,9 +12,9 @@
             
 
                 <ServiceList :services="services" />
-
-                <Button @click="buttonClick" text="LEARN MORE"/>
-            
+                
+                <Button link="#more-services-page" text="SCROLL TO LEARN MORE"/>
+                            
 
         </div>
         
@@ -43,9 +43,6 @@ export default {
         },
 
         methods: {
-            buttonClick() {
-                alert('Learn more')
-            }
         },
 
         data() {
