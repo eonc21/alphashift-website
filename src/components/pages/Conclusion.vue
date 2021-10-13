@@ -39,7 +39,7 @@
 
         <div class='social'>
             <a href="mailto:oncelinor@gmail.com" class='image-container'>
-                <img src="https://res.cloudinary.com/gromceri-test/image/upload/v1633903356/AlphaShift/linkedin-logo-white_juanmj.png" alt="">
+                <img id='mail' src="https://res.cloudinary.com/gromceri-test/image/upload/v1634154162/AlphaShift/mail_bxfjts.png" alt="">
             </a>
             <a href=''>
             </a>
@@ -112,6 +112,11 @@ export default {
 
 }
 
+#mail {
+    width: 50%;
+    height: 40%;
+}
+
 footer {
     display: flex;
     flex-shrink: 0;
@@ -121,6 +126,7 @@ footer {
     justify-content: center;
     align-items: center;
     align-content: center;
+
 }
 
 #footer-text {
