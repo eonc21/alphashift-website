@@ -62,7 +62,7 @@ if (width < 1000) {
 
 if (width < 600) {
     font = 4.5
-    w = 80
+    w = 85
 }
 
 
@@ -81,7 +81,7 @@ if (width < 600) {
             slides: [
                     {
                     title: 'Slide #1',
-                    content: `<div style="display: flex; justify-content: center; margin-bottom: 40px;
+                    content: `<div style="display: flex; justify-content: center; margin-bottom: 50px;
                             text-align: center; width: ${w}vw; font-size: ${font}vw; align-self:">
                             As a data consultancy organization, we excel at 
                             supporting and leading our clients through a variety 
