@@ -52,7 +52,7 @@ import AnimatedComponent from './AnimatedComponent.vue'
 @media (max-width: 600px){
     #service-list {
         flex-direction: column;
-        width: 100%
+        width: 100%;
     
     }
     

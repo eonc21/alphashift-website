@@ -1,11 +1,15 @@
 <template>
     <div id='btn'>
+        <a :href="`${link}`">
+        
         <button :type="type">
                 <text>
             {{ text }}
 
         </text>
         </button>
+        </a>
+        
         
 
     </div>
@@ -13,15 +17,14 @@
 
 <script>
     export default {
-        // mounted() {
-        //     this.$emit('buttonClick');
-        // },
+        
         name: 'Button',
 
         props: {
             text: String,
             type: String,
             buttonClick: Function,
+            link: String
         },
 
       

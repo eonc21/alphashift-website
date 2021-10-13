@@ -24,6 +24,16 @@
         
     }
 
+@media (max-width: 1000px) {
+    #title {
+        font-size: 8vw;
+        justify-content: center;
+    }
+    
+
+}
+
+
 @media (max-width: 600px) {
         #title {
         font-size: 12vw;
@@ -35,8 +45,7 @@
             display: flex;
 
         }
+    }
     
-
-} 
 
 </style>

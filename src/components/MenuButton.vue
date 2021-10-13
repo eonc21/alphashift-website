@@ -37,4 +37,15 @@
     font-weight: 100;
 }
 
+@media (max-width: 600px) {
+
+    #btn {
+        height: 0px;
+        width: 0px;
+        visibility: hidden;
+    }
+    
+}
+
+
 </style>

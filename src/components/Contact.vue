@@ -1,5 +1,6 @@
 <template>
   <div class="form">
+    <animated-component>
     <form @submit.prevent="sendEmail">
       <TextInput
         name="email"
@@ -47,6 +48,8 @@
 
 
     </form>
+    </animated-component>
+
   </div>
   
 </template>
@@ -56,6 +59,7 @@
 import TextInput from './TextInput.vue'
 import Button from './Button.vue'
 import emailjs from 'emailjs-com';
+import AnimatedComponent from './AnimatedComponent.vue'
 // let globalPayload = {}
 
 export default {
@@ -68,6 +72,7 @@ export default {
     // Field,
     Button,
     TextInput,
+    AnimatedComponent,
   },
 
   data() {
@@ -93,11 +98,10 @@ export default {
 
 
     async sendEmail(submitEvent) {
-      alert(submitEvent.target.email)
-            submitEvent.preventDefault();
+      // alert(submitEvent.target.email)
+      submitEvent.preventDefault();
 
       let payload =  await this.getFormValues(submitEvent)
-    //   alert("payload")
       let validEmail = await this.validateEmail(submitEvent.target.email.value)
       let validNameAndMessage = await this.validateText(submitEvent.target.name.value, 
                             submitEvent.target.message.value)
@@ -125,29 +129,25 @@ export default {
       this.message = ''
     },
 
-    // onSubmit(values) {
-    //   console.log(JSON.stringify(values, null, 2));
-    // },
+  
     async validateEmail(value) {
-      // if the field is empty
+
       if (!value) {
         return false;
       }
-      // if the field is not a valid email
+
       const regex = /^[A-Z0-9._%+-]+@[A-Z0-9.-]+\.[A-Z]{2,4}$/i;
       if (!regex.test(value)) {
         return false;
       }
-      // All is good
+
       return true;
     },
 
     async validateText(name, message) {
       const regex  = /^[a-zA-Z\s]*$/;  
-      console.log(name)
 
       if (regex.test(name) && name && message) {
-        console.log("shits good")
         return true;
 
 

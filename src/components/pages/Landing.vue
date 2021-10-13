@@ -1,7 +1,11 @@
 <template>
     <div id="landing-page">
+        
+        
+
         <div id='menu-container'>
             <MenuButton />
+            <NavBar />
         </div>
         
         <div id='title-container'>
@@ -17,6 +21,7 @@
 import Title from "../Title.vue"
 import Subtitle from "../Subtitle.vue"
 import MenuButton from "../MenuButton.vue"
+import NavBar from "../NavBar.vue"
 
     export default {
         name: 'Landing',
@@ -25,11 +30,14 @@ import MenuButton from "../MenuButton.vue"
             Title,
             Subtitle,
             MenuButton,
+            NavBar,
         },
         
         props: {
 
-        }
+        },
+
+        
     }
 
 </script>
@@ -48,6 +56,9 @@ import MenuButton from "../MenuButton.vue"
 }
 
 #menu-container {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
     height: 35%;
     display: flex;
     justify-content: left;
@@ -67,10 +78,26 @@ import MenuButton from "../MenuButton.vue"
 
 }
 
+@media (max-width: 1000px) {
+    #menu-container {
+        height: 15%;
+        margin: 40px 0px 0px 40px;
+    } 
+    #title-container {
+        width: 82.5%;
+        height: 70%;
+        align-self: center;
+        text-align: center;
+        margin: 0;
+        justify-content: space-evenly;
+    }
+
+}
+
 @media (max-width: 600px) {
     #menu-container {
         height: 12.5%;
-        margin: 30px 0px 0px 30px;
+        margin: 20px 0px 0px 0px;
     }
 
     #title-container {
@@ -83,6 +110,8 @@ import MenuButton from "../MenuButton.vue"
     }
 
 }
+
+
 
 
 

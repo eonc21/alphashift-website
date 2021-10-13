@@ -32,6 +32,18 @@
     border: rgba(255, 255, 255, 0.85) solid 1px;
 }
 
+@media (max-width: 1000px) {
+    #header {
+        display: flex;
+        justify-content: center;
+        margin: auto;
+        padding: 30px 50px 30px 50px;
+        align-self: center;
+        font-size: 7vw;
+    }
+
+}
+
 @media (max-width: 600px) {
     #header {
         display: flex;
@@ -43,5 +55,9 @@
     }
 
 }
+
+
+
+
 
 </style>

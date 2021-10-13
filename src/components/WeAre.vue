@@ -47,6 +47,13 @@ span {
 
 }
 
+@media (max-width: 1000px) {
+    p {
+        font-size: 3.15vw;
+        margin-top: 50px;
+    }
+
+}
 @media (max-width: 600px) {
     p {
         font-size: 4vw;
@@ -54,5 +61,7 @@ span {
     }
 
 }
+
+
 
 </style>

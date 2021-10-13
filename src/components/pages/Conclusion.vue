@@ -1,7 +1,10 @@
 <template>
   <div id='conclusion-page'>
         <div id='container'>
+            <animated-component>
             <PageHeader text="INTERESTED? CONTACT US." />
+            </animated-component>
+
             <div id='form-container'>
                 <Contact />
             </div>
@@ -54,6 +57,7 @@
 <script>
 import Contact from '../Contact.vue'
 import PageHeader from '../PageHeader.vue'
+import AnimatedComponent from '../AnimatedComponent.vue'
 
 export default {
 
@@ -62,6 +66,8 @@ export default {
     components: {
         PageHeader,
         Contact,
+        AnimatedComponent,
+        
 
     },
 

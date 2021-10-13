@@ -28,11 +28,9 @@
                 
                 
             </div>
-            <!-- <div id="button-container">
-                Work with us >
-            </div> -->
+          
             <div id='button-container'>
-                <Button text="WORK WITH US" />
+                <Button link="#conclusion-page" text="WORK WITH US" />
 
             </div>
 

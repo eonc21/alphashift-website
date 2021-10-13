@@ -70,6 +70,16 @@ import AnimatedComponent from '../AnimatedComponent.vue'
 
     }
 
+}
+
+@media (max-width: 1000px) {
+
+    #text-container {
+        width: 95%;
+        align-self: center;
+        justify-content: space-evenly;
+
+    }
 
 }
 

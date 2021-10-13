@@ -29,6 +29,7 @@
   <!-- <h1>HELLO FROM VUEJS.</h1> -->
 </template>
 
+
 <script>
 // import Vue from 'vue';
 // import VueCarousel from 'vue-carousel';
@@ -57,7 +58,10 @@ export default {
 
 <style>
 
+html{
+    scroll-behavior:smooth;
 
+}
 body {
   padding: 0;
   margin: 0;
@@ -95,6 +99,7 @@ body::-webkit-scrollbar-thumb {
   height: 100vh;
   width: 100vw;
   max-width: 100%;
+
 }
 
 @media (max-width: 600px){
