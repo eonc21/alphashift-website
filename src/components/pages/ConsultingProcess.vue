@@ -20,6 +20,15 @@
 <script>
 import ProcessContainer from '../ProcessContainer.vue'
 import LineContainer from '../LineContainer.vue'
+let message1 = "STRATEGY CONSULTING & DELIVERABLES"
+let message2 = "AI/ML MODELLING AND DATA ANALYTICS"
+
+let width = window.innerWidth
+
+if (width < 600) {
+    message2 = "STRATEGY CONSULTING & DELIVERABLES";
+    message1 = "AI/ML MODELLING AND DATA ANALYTICS"
+}
     export default {
         name: 'ConsultingProcess',
 
@@ -36,8 +45,8 @@ import LineContainer from '../LineContainer.vue'
         data() {
             return {
                 titles: {
-                    titlesbox1: ["UNDERSTANDING THE PROBLEM", "STRATEGY CONSULTING & DELIVERABLES"],
-                    titlesbox2: ["DATA MODELLING & ENGINEERING", "AI/ML MODELLING AND DATA ANALYTICS"]
+                    titlesbox1: ["UNDERSTANDING THE PROBLEM", message1],
+                    titlesbox2: ["DATA MODELLING & ENGINEERING", message2]
                 },
             
             }

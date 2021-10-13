@@ -254,7 +254,7 @@ button {
 @media (max-width: 1000px) {
     form {
         width: 100%;
-        height: 100%;
+        height: 650px;
         justify-content: space-evenly;
         }
 
@@ -285,9 +285,13 @@ button {
 }
 
 @media (max-width: 600px) {
+  .form {
+    height: 500px;
+    
+  }
     form {
         width: 80vw;
-        height: 100%;
+        height: 70vh;
         justify-content: space-evenly;
         }
 
@@ -296,14 +300,17 @@ button {
       flex-direction: column;
       align-self: flex-start;
       font-size: 4vw;
+      justify-content: space-between;
+      height: 70px;
       text-align: left;
     }
 
     .checkbox {
       width: 100%;
       align-self: flex-start;
-      justify-content: flex-start;
-      /* margin: 0; */
+      /* margin-bottom: 20px; */
+      /* justify-content: spa; */
+      margin: auto;
     }
 
     .box {
