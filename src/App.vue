@@ -17,6 +17,10 @@
       <OurServices />
     </div>
 
+    <div id="fit-content" class="view-container">
+      <MoreServices />
+    </div>
+
     <div class="view-container">
       <ConsultingProcess />
     </div>
@@ -39,6 +43,7 @@ import WhatWeDo from "./components/pages/WhatWeDo.vue"
 import OurServices from "./components/pages/OurServices.vue"
 import ConsultingProcess from "./components/pages/ConsultingProcess.vue"
 import Conclusion from "./components/pages/Conclusion.vue"
+import MoreServices from "./components/pages/MoreServices.vue"
 
 // Vue.use(VueCarousel);
 
@@ -51,6 +56,7 @@ export default {
     OurServices,
     ConsultingProcess,
     Conclusion,
+    MoreServices,
 
   }
 }
@@ -100,6 +106,10 @@ body::-webkit-scrollbar-thumb {
   width: 100vw;
   max-width: 100%;
 
+}
+
+#fit-content {
+  height: fit-content;
 }
 
 @media (max-width: 1000px){
