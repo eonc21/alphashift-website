@@ -28,7 +28,7 @@ export default {
 <style>
 .link-list {
     width: 25%;
-    line-height: 30px;
+    line-height: 35px;
 }
 
 </style>
