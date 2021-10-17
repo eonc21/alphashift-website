@@ -68,7 +68,6 @@ button {
     box-shadow: 0px 0px 17px 4px rgba(173, 0, 0, 0.91);
     cursor: pointer;
     user-select: none;
-
 }
 
 
@@ -78,12 +77,35 @@ button {
         font-size: 3vw;
     }
 
+    #btn:hover {
+        box-shadow: none;
+        cursor: pointer;
+        user-select: none;
+    }
+
+    #btn:active {
+        box-shadow: 0px 0px 17px 4px rgba(173, 0, 0, 0.91);
+        cursor: pointer;
+        user-select: none;
+    }
+
 }
 
 @media (max-width: 600px) {
 
     text {
         font-size: 4vw;
+    }
+
+    #btn:hover {
+        box-shadow: none;
+        cursor: pointer;
+        user-select: none;
+    }
+    #btn:active {
+        box-shadow: 0px 0px 17px 4px rgba(173, 0, 0, 0.91);
+        cursor: pointer;
+        user-select: none;
     }
 }
 

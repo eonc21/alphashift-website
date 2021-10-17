@@ -1,7 +1,15 @@
 <template>
   <div class="form">
-    <animated-component>
+    
+    <animated-component>  
     <form @submit.prevent="sendEmail">
+      <p class="error" v-if="errors.length">
+      Do not leave any inputs empty and make sure you do not use numbers and symbols in your name.
+    </p>
+
+    <p class="successful" v-if="success.length">
+      Thank you for your submission.
+    </p>
       <TextInput
         name="email"
         type="email"
@@ -39,6 +47,8 @@
         label="Notes:"
         placeholder="Your thoughts"
       />
+
+      
       <br>
                 <!-- <input type="submit" value="Send"> -->
 
@@ -77,6 +87,8 @@ export default {
 
   data() {
     return {
+      errors: [],
+      success: [],
       checkedBoxes: [],
       name: '',
       email: '',
@@ -109,6 +121,9 @@ export default {
 
       try {
         if (validEmail && validNameAndMessage) {
+          console.log("esedfd")
+          this.errors = []
+          this.success.push("Thank you for your submission.")
           emailjs.send('service_bjn1xnj', 'template_klkrcgq', payload,
             'user_qK5SJr6uQBEQWxZq1lBVZ', {
               name: this.name,
@@ -116,7 +131,8 @@ export default {
               message: this.message
         })
         } else {
-          alert("Do not leave any inputs empty and make sure you do not use numbers and symbols in your name.")
+          this.errors.push("Do not leave any inputs empty and make sure you do not use numbers and symbols in your name.")
+          this.success = []
         }
         
 
@@ -171,7 +187,7 @@ form {
     display: flex;
     flex-direction: column;
     justify-content: flex-start;
-    margin: 50px 0;
+    margin: 10px 0;
     width: 100%;
     height:550px;
     /* margin:auto; */
@@ -243,6 +259,20 @@ input {
 
 }
 
+ul {
+  display: flex;
+  align-self: center;
+}
+
+.error, .successful {
+      font-size: 1vw;
+      color: rgb(255, 87, 87);
+    }
+
+    .successful {
+      color: rgba(117, 216, 117, 0.849);
+    }
+
 
 
 button {
@@ -282,6 +312,9 @@ button {
       /* margin: 0; */
     }
 
+    
+
+
 }
 
 @media (max-width: 600px) {
@@ -291,6 +324,7 @@ button {
   }
     form {
         width: 80vw;
+        margin: 50px 0;
         height: 70vh;
         justify-content: space-evenly;
         }
@@ -321,9 +355,27 @@ button {
       margin: 0;
     }
 
+    ul {
+      /* display: block; */
+      justify-content: flex-start;
+    }
+
+    .error {
+      display: flex;
+      justify-content: left;
+      font-size: 3vw;
+    }
+
+    .successful {
+      display: flex;
+      justify-content: left;
+      font-size: 3vw;
+    }
+
     input[type=checkbox] {
       /* margin: 0; */
     }
+
 
 }
 

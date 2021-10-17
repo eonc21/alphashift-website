@@ -56,7 +56,7 @@ export default {
 /* Fade animation */
 .fade-enter-active,
 .fade-leave-active {
-  transition: opacity 500ms ease-in-out;
+  transition: opacity 350ms ease-in-out;
 }
 .fade-enter-from,
 .fade-leave-to {
