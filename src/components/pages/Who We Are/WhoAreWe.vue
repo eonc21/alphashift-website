@@ -17,9 +17,9 @@
 </template>
 
 <script>
-import PageHeader from "../PageHeader.vue"
-import WeAre from "../WeAre.vue"
-import AnimatedComponent from '../AnimatedComponent.vue'
+import PageHeader from "../../PageHeader.vue"
+import WeAre from "./WeAre.vue"
+import AnimatedComponent from '../../AnimatedComponent.vue'
 
     export default {
 

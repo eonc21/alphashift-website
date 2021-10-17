@@ -66,10 +66,10 @@
 
 <script>
 // import {  Field } from 'vee-validate';
-import TextInput from './TextInput.vue'
-import Button from './Button.vue'
+import TextInput from '../../TextInput.vue'
+import Button from '../../Button.vue'
 import emailjs from 'emailjs-com';
-import AnimatedComponent from './AnimatedComponent.vue'
+import AnimatedComponent from '../../AnimatedComponent.vue'
 // let globalPayload = {}
 
 export default {

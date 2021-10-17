@@ -30,9 +30,9 @@
 </template>
 
 <script>
-import HorizontalWidget from "../components/HorizontalWidget.vue"
-import InvertedWidget from "../components/InvertedWidget.vue"
-import AnimatedComponent from '../components/AnimatedComponent.vue'
+import HorizontalWidget from "./HorizontalWidget.vue"
+import InvertedWidget from "./InvertedWidget.vue"
+import AnimatedComponent from '../../AnimatedComponent.vue'
 
 export default {
     name: 'WidgetList',

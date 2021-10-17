@@ -5,7 +5,7 @@
 </template>
 
 <script>
-import WidgetList from '../WidgetList.vue'
+import WidgetList from './WidgetList.vue'
 
 export default {
     name: 'MoreServices',

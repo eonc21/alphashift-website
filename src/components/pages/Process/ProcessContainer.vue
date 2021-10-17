@@ -17,7 +17,7 @@
 </template>
 
 <script>
-import ProcessBox from '../components/ProcessBox.vue'
+import ProcessBox from './ProcessBox.vue'
     export default {
         name: 'ProcessContainer',
         props: {

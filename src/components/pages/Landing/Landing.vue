@@ -18,10 +18,10 @@
 </template>
 
 <script>
-import Title from "../Title.vue"
-import Subtitle from "../Subtitle.vue"
-import MenuButton from "../MenuButton.vue"
-import NavBar from "../NavBar.vue"
+import Title from "./Title.vue"
+import Subtitle from "./Subtitle.vue"
+import MenuButton from "./MenuButton.vue"
+import NavBar from "./NavBar.vue"
 
     export default {
         name: 'Landing',

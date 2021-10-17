@@ -44,9 +44,9 @@
 </template>
 
 <script>
-import PageHeader from '../PageHeader.vue'
-import AnimatedComponent from '../AnimatedComponent.vue'
-import Button from '../Button.vue'
+import PageHeader from '../../PageHeader.vue'
+import AnimatedComponent from '../../AnimatedComponent.vue'
+import Button from '../../Button.vue'
 import { VueperSlides, VueperSlide } from 'vueperslides'
 import 'vueperslides/dist/vueperslides.css'
 

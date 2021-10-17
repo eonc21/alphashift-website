@@ -18,8 +18,8 @@
 </template>
 
 <script>
-import ProcessContainer from '../ProcessContainer.vue'
-import LineContainer from '../LineContainer.vue'
+import ProcessContainer from './ProcessContainer.vue'
+import LineContainer from './LineContainer.vue'
 let message1 = "STRATEGY CONSULTING & DELIVERABLES"
 let message2 = "AI/ML MODELLING AND DATA ANALYTICS"
 

@@ -12,8 +12,8 @@
 </template>
 
 <script>
-import Service from '../components/Service.vue'
-import AnimatedComponent from './AnimatedComponent.vue'
+import Service from './Service.vue'
+import AnimatedComponent from '../../AnimatedComponent.vue'
 
     export default {
         name: 'ServiceList',

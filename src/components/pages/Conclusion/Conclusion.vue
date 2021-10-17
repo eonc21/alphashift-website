@@ -56,9 +56,9 @@
 </template>
 
 <script>
-import Contact from '../Contact.vue'
-import PageHeader from '../PageHeader.vue'
-import AnimatedComponent from '../AnimatedComponent.vue'
+import Contact from './Contact.vue'
+import PageHeader from '../../PageHeader.vue'
+import AnimatedComponent from '../../AnimatedComponent.vue'
 
 export default {
 

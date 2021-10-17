@@ -37,13 +37,13 @@
 <script>
 // import Vue from 'vue';
 // import VueCarousel from 'vue-carousel';
-import Landing from "./components/pages/Landing.vue"
-import WhoAreWe from "./components/pages/WhoAreWe.vue"
-import WhatWeDo from "./components/pages/WhatWeDo.vue"
-import OurServices from "./components/pages/OurServices.vue"
-import ConsultingProcess from "./components/pages/ConsultingProcess.vue"
-import Conclusion from "./components/pages/Conclusion.vue"
-import MoreServices from "./components/pages/MoreServices.vue"
+import Landing from "./components/pages/Landing/Landing.vue"
+import WhoAreWe from "./components/pages/Who We Are/WhoAreWe.vue"
+import WhatWeDo from "./components/pages/What We Do/WhatWeDo.vue"
+import OurServices from "./components/pages/Our Services/OurServices.vue"
+import ConsultingProcess from "./components/pages/Process/ConsultingProcess.vue"
+import Conclusion from "./components/pages/Conclusion/Conclusion.vue"
+import MoreServices from "./components/pages/Our Services/MoreServices.vue"
 
 // Vue.use(VueCarousel);
 

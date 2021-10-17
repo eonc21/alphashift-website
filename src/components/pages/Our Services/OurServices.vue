@@ -26,10 +26,10 @@
 </template>
 
 <script>
-import ServiceList from '../ServiceList.vue'
-import PageHeader from '../PageHeader.vue'
+import ServiceList from './ServiceList.vue'
+import PageHeader from '../../PageHeader.vue'
 // import Button from '../Button.vue'
-import AnimatedComponent from '../AnimatedComponent.vue'
+import AnimatedComponent from '../../AnimatedComponent.vue'
 
 export default {
 
