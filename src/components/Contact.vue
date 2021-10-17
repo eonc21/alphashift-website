@@ -308,6 +308,18 @@ button {
 
     }
 
+    .error {
+      display: flex;
+      justify-content: left;
+      font-size: 2.25vw;
+    }
+
+    .successful {
+      display: flex;
+      justify-content: left;
+      font-size: 2.25vw;
+    }
+
     input[type=checkbox] {
       /* margin: 0; */
     }

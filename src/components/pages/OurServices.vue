@@ -13,7 +13,7 @@
 
                 <ServiceList :services="services" />
                 
-                <Button link="#more-services-page" text="SCROLL TO LEARN MORE"/>
+                <!-- <Button link="#more-services-page" text="SCROLL TO LEARN MORE"/> -->
                             
 
         </div>
@@ -28,7 +28,7 @@
 <script>
 import ServiceList from '../ServiceList.vue'
 import PageHeader from '../PageHeader.vue'
-import Button from '../Button.vue'
+// import Button from '../Button.vue'
 import AnimatedComponent from '../AnimatedComponent.vue'
 
 export default {
@@ -38,7 +38,7 @@ export default {
         components: {
             ServiceList,
             PageHeader,
-            Button,
+            // Button,
             AnimatedComponent,
         },
 
