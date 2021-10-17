@@ -76,7 +76,7 @@ nav {
     
     .nav {
         margin-right: 5%;
-        width: 70%;
+        width: 75%;
     } 
     
 }
