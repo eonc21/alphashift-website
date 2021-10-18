@@ -122,8 +122,8 @@ export default {
         if (validEmail && validNameAndMessage) {
           this.errors = []
           this.success.push("Thank you for your submission.")
-          emailjs.send('service_bjn1xnj', 'template_klkrcgq', payload,
-            'user_qK5SJr6uQBEQWxZq1lBVZ', {
+          emailjs.send('service_maq6egd', "template_7d0181u", payload,
+            'user_Wv68JTifS2kYb9Ey9g1R0', {
               name: this.name,
               email: this.email,
               message: this.message
