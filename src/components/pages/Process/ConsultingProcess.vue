@@ -75,7 +75,7 @@ if (width < 600) {
 #page {
     flex-direction: column;
     background-image: linear-gradient(0deg, rgba(0, 0, 0, 0.8), rgba(0, 0, 0, 0.8)),
-     url('https://res.cloudinary.com/gromceri-test/image/upload/v1633734401/AlphaShift/samson-ZGjbiukp_-A-unsplash_ezrblm.jpg');
+     url('https://res.cloudinary.com/dwzcpzspu/image/upload/v1634568822/AlphaShift%20website/samson-ZGjbiukp_-A-unsplash_ezrblm_n57ckj.jpg');
      /* mix-blend-mode: normal; */
     background-size: cover;
         filter: grayscale(50%);
