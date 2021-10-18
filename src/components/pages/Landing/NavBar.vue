@@ -44,7 +44,8 @@ export default {
             },
             {
                 name: "Contact us",
-                link: "conclusion-page"
+                link: "conclusion-page",
+                red: true,
             },
             ]
         }

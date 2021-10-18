@@ -2,7 +2,7 @@
      <div class="link-list" :key="navLink.name" v-for="navLink in navLinks" id='navLink'>
          <Link :navLink="navLink" />
     </div>
-  
+
 </template>
 
 <script>
@@ -29,6 +29,10 @@ export default {
 .link-list {
     width: 25%;
     line-height: 35px;
+}
+
+#red-link {
+    color: red;
 }
 
 </style>
