@@ -57,6 +57,7 @@ export default {
 nav {
     display: flex;
     width: 100%;
+    margin-top: 20px;
     align-self: flex-start;
     justify-content: flex-end;
 }

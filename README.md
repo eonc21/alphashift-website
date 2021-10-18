@@ -1,4 +1,4 @@
-# alphashift-website
+# AlphaShift website
 
 ## Project setup
 ```

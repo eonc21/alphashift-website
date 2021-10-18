@@ -4,9 +4,9 @@
             {{ title }}
         </p>
 
-        <text v-if="hasContent">
+        <!-- <text v-if="hasContent">
             Is a data solution suitable?
-        </text>
+        </text> -->
 
     </div>
 </template>

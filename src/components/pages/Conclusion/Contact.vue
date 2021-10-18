@@ -25,6 +25,16 @@
         label="Name:"
         placeholder="Your name"
       />
+          
+     
+
+      <TextInput
+        name="message"
+        type="text"
+        label="Notes:"
+        placeholder="Your thoughts"
+      />
+
       <div class='checkboxes'>
         <div class="box">
             <input id="applicant" type="checkbox" value="applicant" name="apply" v-model="checkedBoxes"/>
@@ -35,18 +45,7 @@
             <input id="customer" type="checkbox" value="customer" name="customer" v-model="checkedBoxes"/>
            <label for="customer" class="checkbox">I want to be a customer.</label>
         </div>
-         
-          
-        
-      </div>     
-     
-
-      <TextInput
-        name="message"
-        type="text"
-        label="Notes:"
-        placeholder="Your thoughts"
-      />
+      </div> 
 
       
       <br>
@@ -121,7 +120,6 @@ export default {
 
       try {
         if (validEmail && validNameAndMessage) {
-          console.log("esedfd")
           this.errors = []
           this.success.push("Thank you for your submission.")
           emailjs.send('service_bjn1xnj', 'template_klkrcgq', payload,

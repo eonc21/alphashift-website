@@ -35,7 +35,7 @@ export default {
                 customers with an implementation timeline and roadmap, followed
                 by model assessment and analytical data reports.
                     `,
-                 image: "https://res.cloudinary.com/gromceri-test/image/upload/v1634162817/AlphaShift/carlos-muza-hpjSkU2UYSU-unsplash_ybf2nq.jpg"
+                 image: "https://res.cloudinary.com/dwzcpzspu/image/upload/v1634568820/AlphaShift%20website/carlos-muza-hpjSkU2UYSU-unsplash_ybf2nq_ug4ypj.jpg"
 
             },
 
@@ -48,7 +48,7 @@ export default {
                 reporting and dashboarding, benchmarking and business performace management tools; 
                 you name it, we have it.
                     `,
-                 image: "https://res.cloudinary.com/gromceri-test/image/upload/v1634162984/AlphaShift/kelly-sikkema--nz-GTuvyBw-unsplash_mqugz3.jpg"
+                 image: "https://res.cloudinary.com/dwzcpzspu/image/upload/v1634568828/AlphaShift%20website/kelly-sikkema--nz-GTuvyBw-unsplash_mqugz3_zxoag8.jpg"
 
             },
 
@@ -59,7 +59,7 @@ export default {
                 cutting edge of innovation and technology. From concept to implementation, we identify
                 the potential for automating your business, based on prescriptive data solutions, and show you 
                 how to put it to the best possible use.`,
-                 image: "https://res.cloudinary.com/gromceri-test/image/upload/v1634162725/AlphaShift/mimi-thian-ZKBzlifgkgw-unsplash_eh6w0r.jpg"
+                 image: "https://res.cloudinary.com/dwzcpzspu/image/upload/v1634568823/AlphaShift%20website/mimi-thian-ZKBzlifgkgw-unsplash_eh6w0r_td7i8a.jpg"
             },
             ]
         }

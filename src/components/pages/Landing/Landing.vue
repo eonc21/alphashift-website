@@ -62,7 +62,7 @@ import NavBar from "./NavBar.vue"
     height: 35%;
     display: flex;
     justify-content: left;
-    margin: 50px 0px 0px 50px;
+    margin: 30px 0px 0px 50px;
 
 }
 

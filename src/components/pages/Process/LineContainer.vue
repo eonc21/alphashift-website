@@ -1,7 +1,7 @@
 <template>
     <div id='middle-container'>
         <div class='half'>
-            <div class='word'>YES.</div>
+            <!-- <div class='word'>YES.</div> -->
             <div class='horizontal'></div>
              <div class="point"></div>
         </div>
@@ -9,6 +9,11 @@
         <div id='text'>
            <p>
                OUR PROCESS.
+               <br>
+               <span id="necessary">
+               A dashed line means "if necessary".
+
+               </span>
            </p>
         </div>
 
@@ -43,7 +48,7 @@
     display: flex;
     width: 100%;
     height: 100px;
-    border-bottom: 1px solid rgb(255, 255, 255);
+    border-bottom: 2px dashed rgb(255, 255, 255);
 }
 
 .point {
@@ -82,6 +87,10 @@ width: 0;
     font-weight: 300;
     color: rgba(255, 255, 255, 0.8);
 }
+
+#necessary {
+        font-size: 1.25vw;
+    }
 
 
 @media (max-width: 1000px) {
@@ -144,6 +153,8 @@ width: 0;
     
 
     }
+
+    
 
 
     #middle-container {

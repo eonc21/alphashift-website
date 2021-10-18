@@ -59,7 +59,7 @@ export default {
                 description: `Validate the viability of implementing AI software 
                 in your organization and make the shift from tactical AI 
                 decision-making to a more strategic business plan.`,
-                picture: "https://res.cloudinary.com/gromceri-test/image/upload/v1633645671/AlphaShift/strategy_nbvmo5.png"
+                picture: "https://res.cloudinary.com/dwzcpzspu/image/upload/v1634568821/AlphaShift%20website/strategy_attabw_hddfp9.png"
             },
 
             {
@@ -68,7 +68,7 @@ export default {
                 description: `Validate the viability of implementing AI 
                 software in your organization and make the shift from tactical
                  AI decision-making to a more strategic business plan.`,
-                 picture: "https://res.cloudinary.com/gromceri-test/image/upload/v1633646073/AlphaShift/graph-white_m745jd.png"
+                 picture: "https://res.cloudinary.com/dwzcpzspu/image/upload/v1634568820/AlphaShift%20website/graph-white_m745jd_xigmcy.png"
             },
 
             {
@@ -77,7 +77,7 @@ export default {
                 description: `Companies should pay special attention to how
                  machine learning simplifies and speeds up implementation 
                  when incorporating intelligence into their infrastructure.`,
-                 picture: "https://res.cloudinary.com/gromceri-test/image/upload/v1633645102/AlphaShift/aiml_bpgazl.png"
+                 picture: "https://res.cloudinary.com/dwzcpzspu/image/upload/v1634568820/AlphaShift%20website/ai_vaebny_bcm6tk.png"
             },
             ]
         }

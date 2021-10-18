@@ -3,8 +3,8 @@
         <ProcessBox :title="titles[0]" :hasContent="isLeft"
         />
         <div id=line-container>
-            <div v-if="isLeft" id='word'>NO.</div>
-            <div id='line'>
+            <div v-if="!isLeft" id='line-right'></div>
+            <div v-if="isLeft" id='line'>
             </div>
              <div class="point"></div>
         </div>
@@ -73,6 +73,12 @@ import ProcessBox from './ProcessBox.vue'
 
 }
 
+#line-right {
+    height: 95%;
+    width: 50%;
+    border-right: 2px dashed white;
+}
+
 #word {
     font-size: 1.75rem;
     margin-bottom: 20px;
@@ -100,11 +106,12 @@ import ProcessBox from './ProcessBox.vue'
         /* margin:auto; */
     }
 
-    #line {
+    #line, #line-right {
         width: 0%;
         visibility: hidden;
         height: 30px;
     }
+
 
     #word {
         height: 0;

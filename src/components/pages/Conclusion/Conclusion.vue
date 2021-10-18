@@ -24,7 +24,7 @@
             <a href='https://www.linkedin.com/company/alphashift-consulting-group/about/'>
 
             <div class='image-container'>
-                <img src="https://res.cloudinary.com/gromceri-test/image/upload/v1633903356/AlphaShift/linkedin-logo-white_juanmj.png" alt="">
+                <img src="https://res.cloudinary.com/dwzcpzspu/image/upload/v1634568820/AlphaShift%20website/linkedin-logo-white_juanmj_qdpv4o.png" alt="">
             </div>
             </a>
         </div>
@@ -32,15 +32,15 @@
 
         <div class='social'>
             <div class='image-container'>
-                <img id='twitter' src="https://res.cloudinary.com/gromceri-test/image/upload/v1633903503/AlphaShift/twitter-icon-18-256_pw56yc.png" alt="">
+                <img id='twitter' src="https://res.cloudinary.com/dwzcpzspu/image/upload/v1634568821/AlphaShift%20website/twitter-icon-18-256_pw56yc_cotyyw.png" alt="">
             </div>
             <a href='#'>
             </a>
         </div>
 
         <div class='social'>
-            <a href="mailto:oncelinor@gmail.com" class='image-container'>
-                <img id='mail' src="https://res.cloudinary.com/gromceri-test/image/upload/v1634154162/AlphaShift/mail_bxfjts.png" alt="">
+            <a href="mailto:alphashiftconsulting@gmail.com" class='image-container'>
+                <img id='mail' src="https://res.cloudinary.com/dwzcpzspu/image/upload/v1634568820/AlphaShift%20website/mail_bxfjts_efrhkr.png" alt="">
             </a>
             <a href=''>
             </a>

@@ -1,6 +1,6 @@
 <template>
     <div id="btn" @click="menuClick">
-        <img src="https://res.cloudinary.com/gromceri-test/image/upload/v1634483898/AlphaShift/unique_2_1_lwo5m3.png" >
+        <img src="https://res.cloudinary.com/dwzcpzspu/image/upload/v1634568822/AlphaShift%20website/unique_2_1_lwo5m3_aqtrp5.png" >
     </div>
 </template>
 
