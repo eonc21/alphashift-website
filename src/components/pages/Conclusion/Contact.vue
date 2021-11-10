@@ -17,7 +17,6 @@
         label="Email:"
         placeholder="Your email"
       />
-      
 
       <TextInput
         name="name"
@@ -26,15 +25,12 @@
         placeholder="Your name"
       />
           
-     
-
       <TextInput
         name="message"
         type="text"
         label="Notes:"
         placeholder="Your thoughts"
       />
-
       <div class='checkboxes'>
         <div class="box">
             <input id="applicant" type="checkbox" value="applicant" name="apply" v-model="checkedBoxes"/>
@@ -46,19 +42,11 @@
            <label for="customer" class="checkbox">I want to be a customer.</label>
         </div>
       </div> 
-
-      
       <br>
-                <!-- <input type="submit" value="Send"> -->
-
       <Button :buttonClick="sendEmail"
       text="SUBMIT FORM" :type="submit"/>
-
-
-
     </form>
     </animated-component>
-
   </div>
   
 </template>
@@ -73,9 +61,7 @@ import AnimatedComponent from '../../AnimatedComponent.vue'
 
 export default {
 
-  
-
-    name: 'Contact',
+  name: 'Contact',
   components: {
     // Form,
     // Field,
@@ -97,81 +83,111 @@ export default {
 
   methods: {
 
-     async getFormValues (submitEvent) {
-      return {
 
-        from_email: submitEvent.target.email.value,
-        from_name: submitEvent.target.name.value,
-        user_title: this.checkedBoxes,
-        user_message: submitEvent.target.message.value,
-      }
-    },
+  /**
+   * Gets the values filled in by the user.
+   */
+  async getFormValues (submitEvent) {
+    return {
 
-
-    async sendEmail(submitEvent) {
-      // alert(submitEvent.target.email)
-      submitEvent.preventDefault();
-
-      let payload =  await this.getFormValues(submitEvent)
-      let validEmail = await this.validateEmail(submitEvent.target.email.value)
-      let validNameAndMessage = await this.validateText(submitEvent.target.name.value, 
-                            submitEvent.target.message.value)
-
-
-      try {
-        if (validEmail && validNameAndMessage) {
-          this.errors = []
-          this.success.push("Thank you for your submission.")
-          emailjs.send('service_maq6egd', "template_7d0181u", payload,
-            'user_Wv68JTifS2kYb9Ey9g1R0', {
-              name: this.name,
-              email: this.email,
-              message: this.message
-        })
-        } else {
-          this.errors.push("Do not leave any inputs empty and make sure you do not use numbers and symbols in your name.")
-          this.success = []
-        }
-        
-
-      } catch(error) {
-          console.log({error})
-      }
-      // Reset form field
-      this.name = ''
-      this.email = ''
-      this.message = ''
-    },
-
-  
-    async validateEmail(value) {
-
-      if (!value) {
-        return false;
-      }
-
-      const regex = /^[A-Z0-9._%+-]+@[A-Z0-9.-]+\.[A-Z]{2,4}$/i;
-      if (!regex.test(value)) {
-        return false;
-      }
-
-      return true;
-    },
-
-    async validateText(name, message) {
-      const regex  = /^[a-zA-Z\s]*$/;  
-
-      if (regex.test(name) && name && message) {
-        return true;
-
-
-      }
-
-      return false;
-
-
-    },
+      from_email: submitEvent.target.email.value,
+      from_name: submitEvent.target.name.value,
+      user_title: this.checkedBoxes,
+      user_message: submitEvent.target.message.value,
+    }
   },
+
+
+  /**
+   * Waits to get values of the form
+   * and waits to validate the inputs, 
+   * if they  are good an email gets 
+   * sent to the company with the request.
+   */
+  async sendEmail(submitEvent) {
+    submitEvent.preventDefault();
+
+    let payload =  await this.getFormValues(submitEvent)
+    let validEmail = await this.validateEmail(submitEvent.target.email.value)
+    let validNameAndMessage = await this.validateText(submitEvent.target.name.value, 
+                          submitEvent.target.message.value)
+
+    // if all inputs are good, thank 
+    // for submission and delete errors
+    try {
+      if (validEmail && validNameAndMessage) {
+        this.errors = []
+        this.success.push("Thank you for your submission.")
+
+        // email service I used because no
+        // time for backend
+        emailjs.send('service_maq6egd', "template_7d0181u", payload,
+          'user_Wv68JTifS2kYb9Ey9g1R0', {
+            name: this.name,
+            email: this.email,
+            message: this.message
+      })
+
+      // if not, warn user about form 
+      // requirements and clear successes
+      } else {
+        this.errors.push(`Do not leave any inputs empty 
+          and make sure you do not use numbers 
+          and symbols in your name.`)
+
+        this.success = []
+      }
+    
+    } catch(error) {
+        console.log({error})
+    }
+
+    // Reset form field
+    this.name = ''
+    this.email = ''
+    this.message = ''
+  },
+
+
+  /**
+   * Checks to see if email fits
+   * template/is empty using regex
+   */
+  async validateEmail(value) {
+
+    if (!value) {
+      return false;
+    }
+
+    const regex = /^[A-Z0-9._%+-]+@[A-Z0-9.-]+\.[A-Z]{2,4}$/i;
+    if (!regex.test(value)) {
+      return false;
+    }
+
+    return true;
+  },
+
+
+  /**
+   * @param name the name of the user
+   * @param message the notes of the user
+   * 
+   * Checks to see if text has any
+   * symbols or numbers in it (assuming
+   * that people won't be named like
+   * Elon Musk's daughter)
+   */
+  async validateText(name, message) {
+    const regex  = /^[a-zA-Z\s]*$/;  
+
+    if (regex.test(name) && name && message) {
+      return true;
+    }
+
+    return false;
+
+  },
+},
 
 }
       
