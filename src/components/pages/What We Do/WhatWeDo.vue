@@ -2,7 +2,7 @@
     <div id="what-are-we-page">
         <div class="half-page red">
             <div id="image-container">
-                <img src="https://res.cloudinary.com/dwzcpzspu/image/upload/v1634568824/AlphaShift%20website/whatwedo_uiqez7_odwmt6.jpg" />
+                <img id="image" src="https://res.cloudinary.com/dwzcpzspu/image/upload/v1634568824/AlphaShift%20website/whatwedo_uiqez7_odwmt6.jpg" />
             </div>
             
         </div>
@@ -138,10 +138,11 @@ if (width < 600) {
 }
 
 #image-container {
-    display: flex;
-    justify-content: right;
+    /* display: flex; */
+    /* justify-content: flex-start; */
+    top: 0;
     width: 88%;
-    height: 88%;
+    height: 100%;
     /* background: linear-gradient(0deg, rgba(22, 22, 22, 0.90), rgba(22, 22, 22, 0.50)); */
     border-radius: 25px;
     z-index: 2;
@@ -160,7 +161,7 @@ if (width < 600) {
     padding: 100px;
 } */
 
-img {
+#image {
     width: 100%;
     height: 100%;
     object-fit: cover;
